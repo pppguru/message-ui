@@ -1,0 +1,80 @@
+.navigation {
+	background-color: #22282d;
+
+	&__list {
+		@include list-reset;
+	}
+
+	&__item {
+		display: flex;
+		text-align: center;
+		transition: .2s ease;
+		width: $navigation-width;
+		height: 110px;
+		position: relative;
+	}
+
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #c0cad0;
+		font-size: 14px;
+		text-decoration: none;
+		width: 100%;
+		transition: .15s ease-in-out;
+
+		i {
+			font-size: 30px;
+			display: block;
+
+			&.icon-teamchat {
+				font-size: 24px;
+			}
+
+			&:before {
+				width: auto;
+			}
+		}
+
+		p {
+			margin: 0;
+		}
+
+		&:hover,
+		&:active,
+		&:visited,
+		&:focus {
+			text-decoration: none;
+		}
+
+		&:hover {
+			color: #8fe9f4;
+		}			
+
+		&.active {
+			background-color: #3d464e;
+			color: #8fe9f4;
+		}
+	}
+
+	&__notifications {
+		position: absolute;
+    top: 13px;
+    right: 28px;
+		color: #fff;
+		background: #f02840;
+		border-radius: 50%;
+		height: 22px;
+		width: 22px;
+		text-align: center;
+		font-size: 12px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		span {
+			margin-top: -1px;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+// lord forgive me my sins, react avatar cropper doesnt let you specifiy wrapper class, duh
+body.dashboard > div > div.fade.in.modal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10000;
+	background: white;
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+
+	.modal-footer {
+		display: flex;
+		justify-content: center;
+	}
+
+	.btn.btn-default {
+		@extend .btn--default;
+		margin-right: 10px;
+	}
+
+	.btn.btn-primary {
+		@extend .btn--beta;
+	}
+}
+
+.AvatarCropper-base canvas {
+	border-radius: 50%;
+}

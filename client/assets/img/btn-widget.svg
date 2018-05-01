@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="88px" height="88px" viewBox="0 0 88 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>btn-widget</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="MessageUs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="02-1-Business-Messaging" sketch:type="MSArtboardGroup" transform="translate(-1096.000000, -3937.000000)">
+            <g id="btn-widget" sketch:type="MSLayerGroup" transform="translate(1100.000000, 3941.000000)">
+                <circle id="Oval-1" fill="#A500E6" filter="url(#filter-1)" sketch:type="MSShapeGroup" cx="40" cy="40" r="40"></circle>
+                <path d="M33.5564449,41.8856263 C32.5196795,40.5051752 31.9050058,38.7872817 31.9050058,36.9252701 C31.9050058,32.3702722 35.5833826,28.6777168 40.1208904,28.6777168 C44.6583982,28.6777168 48.3367751,32.3702722 48.3367751,36.9252701 C48.3367751,41.480268 44.6583982,45.1728234 40.1208904,45.1728234 C40.1021146,45.1728234 40.0833536,45.1727602 40.0646074,45.172634 L40.0646074,49.8369976 C40.0646074,49.8369976 34.7460878,44.0219843 33.5564449,41.8856263 Z M29.5043551,45.8930178 C32.7451179,51.9638003 38.198307,58 40.1638811,58 C43.1796932,58 53.2136394,45.6093158 52.9965306,37.0483679 C52.7794218,28.4874201 47.177009,24 39.9982653,24 C32.8195216,24 27,30.3156149 27,37.0483679 C27,39.3930077 27.7727632,42.6493006 29.5043551,45.8930178 Z" id="Oval-39" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

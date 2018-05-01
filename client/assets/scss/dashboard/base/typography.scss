@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&subset=latin,latin-ext");
+
+html, 
+body {
+	font-family: 'Source Sans Pro';
+	font-size: 16px;
+}
+
+a,
+a:hover
+a:focus,
+a:visited,
+a:active {
+	text-decoration: none;
+	outline: none;
+}
+
+p {
+	margin: 0 0 10px 0;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-default {
+	color: $clr-text-dark;
+}
+
+.text-beta {
+	color: $clr-beta;
+}
+
+code {
+	font-size: 14px !important;
+}
+
+.link-default {
+	color: $clr-alpha;
+	cursor: pointer;
+	transition: .15s ease;
+
+	&:hover {
+		color: #38B6FF;
+	}
+}

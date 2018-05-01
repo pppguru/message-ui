@@ -1,0 +1,27 @@
+.list {
+	@include list-reset;
+
+	&__item {
+		display: flex;
+		border-bottom: 1px solid $clr-border-dark;
+		padding: 0 15px;
+		align-items: center;
+	}
+
+	&__cell {
+		line-height: 50px;
+		color: $clr-text-dark;
+
+		&--grow {
+			flex: 1;
+		}
+
+		&--image {
+			margin-right: 10px;
+			img {
+				max-width: 40px;
+				height: auto;
+			}
+		}
+	}
+}

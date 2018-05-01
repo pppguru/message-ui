@@ -1,0 +1,115 @@
+@font-face {
+	font-family: "iconfont-messageus";
+	src: url("/iconfont/iconfont.eot?#iefix") format("embedded-opentype"),
+url("/iconfont/iconfont.woff") format("woff"),
+url("/iconfont/iconfont.ttf") format("truetype"),
+url("/iconfont/iconfont.svg#iconfont-messageus") format("svg");
+}
+
+.mu {
+	line-height: 1;
+}
+
+.mu:before {
+	font-family: iconfont-messageus !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.mu-account:before {
+	content: "\f101";
+}
+.mu-activity:before {
+	content: "\f102";
+}
+.mu-analytics:before {
+	content: "\f103";
+}
+.mu-angellist:before {
+	content: "\f104";
+}
+.mu-arrow:before {
+	content: "\f105";
+}
+.mu-attachment:before {
+	content: "\f106";
+}
+.mu-away:before {
+	content: "\f107";
+}
+.mu-camera:before {
+	content: "\f108";
+}
+.mu-cart:before {
+	content: "\f109";
+}
+.mu-check-tick:before {
+	content: "\f10a";
+}
+.mu-check:before {
+	content: "\f10b";
+}
+.mu-checkbox-tick:before {
+	content: "\f10c";
+}
+.mu-clock:before {
+	content: "\f10d";
+}
+.mu-customers:before {
+	content: "\f10e";
+}
+.mu-facebook:before {
+	content: "\f10f";
+}
+.mu-help:before {
+	content: "\f110";
+}
+.mu-invite:before {
+	content: "\f111";
+}
+.mu-linkedin:before {
+	content: "\f112";
+}
+.mu-logout:before {
+	content: "\f113";
+}
+.mu-map:before {
+	content: "\f114";
+}
+.mu-messages:before {
+	content: "\f115";
+}
+.mu-mobile:before {
+	content: "\f116";
+}
+.mu-organizations:before {
+	content: "\f117";
+}
+.mu-pencil:before {
+	content: "\f118";
+}
+.mu-profile:before {
+	content: "\f119";
+}
+.mu-scroll:before {
+	content: "\f11a";
+}
+.mu-search:before {
+	content: "\f11b";
+}
+.mu-settings:before {
+	content: "\f11c";
+}
+.mu-sign-out:before {
+	content: "\f11d";
+}
+.mu-smiley:before {
+	content: "\f11e";
+}
+.mu-teamchat:before {
+	content: "\f11f";
+}
+.mu-twitter:before {
+	content: "\f120";
+}

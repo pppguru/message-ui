@@ -1,0 +1,9 @@
+.single-input.telephone
+  form.branch-sms-form
+    input.international-phone-number.international-phone-number--padded-right(type='tel', placeholder='Enter phone number')
+    button(type="submit", disabled="true").mbtn.mbtn--branch-submit.branch-sms-form__submit Get The App
+    .branch-sms-form__sent-info Sent!
+    div.branch-message.branch-message--error
+      p It doesn’t seem like a valid number. Please try again.
+    div.branch-message.branch-message--success
+      p We’ve sent you a download link to #[span.BranchNumber]

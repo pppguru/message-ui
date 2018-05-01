@@ -1,0 +1,17 @@
+ /* hotfix to solve conflict in bootstrap css and Denis' custom styles */
+ .website header{
+ 	display:block !important;
+ }
+
+ .website header .header,
+ .website .sub-menu{
+ 	position:static;
+ }
+
+ .cover--a > .container{
+ 	display:block !important;
+ }
+
+ .landing{
+ 	margin-top:80px;
+ }

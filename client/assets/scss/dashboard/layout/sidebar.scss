@@ -1,0 +1,63 @@
+.section__sidebar {
+	position: relative;
+	width: 250px;
+	background: #3d464e;
+	overflow: auto;
+}
+
+.sidebar {
+	&__header {
+		padding: 0 20px;
+		display: flex;
+    justify-content: space-between;
+    align-items: center;
+	}
+
+	&__title {
+		color: #c0cad0;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-size: 18px;
+	}
+
+	&__list {
+		@include list-reset;
+	}
+
+	&__item {
+		position: relative;
+	}
+
+	&__link {
+		padding: 15px 20px;
+		color: #c0cad0;
+		font-size: 16px;
+		display: block;
+		transition: .15s ease;
+		cursor: pointer;
+
+		&:hover,
+		&--active {
+			background: #4e5c69;
+			color: #8fe9f4;
+		}
+
+		&--disabled {
+			background: none !important;
+			color: #c0cad0 !important;
+			cursor: default !important;
+		}
+
+		&--unread {
+			color: #fff;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+
+	.sk-circle .sk-child:before {
+		background: #fff;
+	}
+}

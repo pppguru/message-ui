@@ -1,0 +1,130 @@
+extends common/layout
+
+block content
+  body.website
+    main
+      header.cover.cover--c
+        .header.header--transcluent
+          - var menuActive = 2
+          - var subMenuActive = 1
+          include common/header-content
+
+        div
+          .container
+            .landing
+              h1.wtitle.wtitle--alpha
+                | Run and grow your business
+                br
+                | through messaging
+              p.paragraph.paragraph--alpha
+                | MessageUs brings all your customer and team
+                br
+                | communication together in one place
+              .single-input
+                a.modal-claim-business.mbtn(href='#claim') Claim your business
+        a.scroll-hint(href='#') Learn more
+      .section
+        .container
+          .row
+            .col-md-8.col-md-push-2.text-block.text-block--center
+              h1.wtitle.wtitle--beta How MessageUs works
+              p.paragraph.sub-heading
+                | Consumers can reach your organization exactly how they want, and never wait on hold again.
+          .row--flex.promo-card
+            .col-sm-6.hidden-xs
+              div
+                img.img_responsive.img-responsive--left(src='img/website/screen07.jpg', alt='Activity')
+            .col-xs-12.col-sm-6.text
+              .text-block--vcenter
+                .graph-channels--vertical
+                  .graph-channels__element
+                    object(type='image/svg+xml', data='img/icons/consumerapp.svg')
+                      img(src='img/website/icons/consumerapp.png')
+                    p.paragraph.paragraph--graph-desc
+                      | MESSAGEUS
+                      br
+                      | CONSUMER APP
+                  .graph-channels__element
+                    object(type='image/svg+xml', data='img/icons/business-sms.svg')
+                      img(src='img/website/icons/business-sms.png')
+                    p.paragraph.paragraph--graph-desc
+                      | Business SMS
+                      br
+                      | NUMBER
+                  .graph-channels__element
+                    object(type='image/svg+xml', data='img/icons/live-chat.svg')
+                      img(src='img/website/icons/live-chat.png')
+                    p.paragraph.paragraph--graph-desc
+                      | LIVE CHAT WIDGET
+                      br
+                      | ON YOUR WEBSITE
+                  .graph-channels__element
+                    object(type='image/svg+xml', data='img/icons/third-party.svg')
+                      img(src='img/website/icons/third-party.png')
+                    p.paragraph.paragraph--graph-desc
+                      | THIRD-PARTY
+                      br
+                      | CHANNELS
+      .section.cover
+        .container
+          .center-sm
+            .messaging-preview
+              .messaging-preview__message-to
+                img(src='img/conv-preview-1.png', alt='Conversation message')
+              .messaging-preview__message-from
+                img(src='img/conv-preview-2.png', alt='Conversation message')
+              .messaging-preview__message-to
+                img(src='img/conv-preview-3.png', alt='Conversation message')
+      .separator.mobile-no-margin.visible-xs
+      .section
+        .container
+          .row
+            .col-md-4.col-md-offset-1.col-sm-6.col-sm-offset-0
+              .text-block--vcenter
+                .text-block
+                  h3.wtitle.wtitle--beta.mobile-no-margin-top Interacting with consumers
+                  p.paragraph.paragraph--beta
+                    | In addition to real time messaging with your users, you can share relevant information from your company to them:
+                  ul.common-list
+                    li
+                      span Reservation and bookings
+                    li
+                      span Push notifications
+                    li
+                      span Offers
+                    li
+                      span Shipment tracking
+                    li
+                      span Product orders
+                  p.paragraph.paragraph--beta
+                    | And your customers can access all this information from within the same conversation!
+            .col-sm-6.col-sm-offset-0.col-md-offset-1
+              img.img_responsive.img-responsive--right.interacting-img(src='img/website/interaction.jpg', alt='Interaction')
+          .separator.hidden-xs
+          .row--flex.promo-card--adjust
+            .col-sm-6.hidden-xs
+              div
+                img.img_responsive.img-responsive--left(src='img/website/screen08.jpg', alt='Conversation')
+            .col-xs-12.col-sm-6.text
+              .text-block--vcenter
+                .text-block.text-block--limited-sm
+                  h3.wtitle.wtitle--beta Everything happens within the conversation
+                  p.paragraph.paragraph--beta
+                    | Everything your users need happens within the conversation, from purchase to previous orders.
+                  .single-input
+                    a.mbtn.mbtn--stroke.button-full-w(href='managing-payments') Learn more about payments
+      .cover.cover--prefooter
+        .container
+          .row
+            .col-md-8.col-md-push-2.text-block.text-block--center.extra-padded
+              p.paragraph.extra-center-padding.extra-bottom-padding
+                | Everything you need to interact with your favourite businesses.
+                br
+                | Start connecting!
+              .single-input--centered.claim-input
+                a.modal-claim-business.mbtn.inline-block(href='#claim') Claim your business
+
+  
+      include common/footer
+
+    include common/modal

@@ -1,0 +1,280 @@
+extends common/layout
+
+block content
+  body.website
+    main
+      - var menuActive = 2
+      header.cover.cover--b
+        .header.header--transcluent
+          include common/header-content
+
+        div
+          .container
+            .landing
+              h1.wtitle.wtitle--alpha
+                | Run and grow your business
+                br
+                | through messaging
+              p.paragraph.paragraph--alpha
+                | MessageUs brings all your customer and team
+                br
+                | communication together into one place.
+              .single-input.single-input--vcenter
+                a.modal-claim-business.mbtn(href='#claim') Claim your business
+                p.paragraph.paragraph--button-sep.sub-heading or
+                a.mbtn(href='connect-your-brand') Request Demo
+        a.scroll-hint(href='#') Learn more
+      .section
+        .container
+          .row
+            .col-md-8.col-md-push-2.text-block.text-block--center
+              h2.wtitle.wtitle--beta How MessageUs works
+              p.paragraph.sub-heading
+                | Consumers connect with your organization how they want, and all the communication is routed to your team.
+          .graph-channels
+            svg.graph-channels--background(xmlns='http://www.w3.org/2000/svg')
+              line
+              line
+              line
+              line
+            .graph-channels__main
+              object(type='image/svg+xml', data='img/website/icons/businesses.svg')
+                img(src='img/website/icons/businesses.png')
+            .graph-channels__element.graph-channels__alpha
+              object(type='image/svg+xml', data='img/website/icons/consumerapp.svg')
+                img(src='img/website/icons/consumerapp.png')
+              p.paragraph.paragraph--graph-desc
+                | Through the
+                br
+                | messageus app
+              p.paragraph.paragraph--graph-more
+                | for iOS
+                br
+                | (and Android coming soon)
+            .graph-channels__element.graph-channels__beta
+              object(type='image/svg+xml', data='img/website/icons/business-sms.svg')
+                img(src='img/website/icons/business-sms.png')
+              p.paragraph.paragraph--graph-desc Via text
+              p.paragraph.paragraph--graph-more
+                | through your business’s
+                br
+                | dedicated MessageUs
+                br
+                | SMS number
+            .graph-channels__element.graph-channels__gamma
+              object(type='image/svg+xml', data='img/website/icons/live-chat.svg')
+                img(src='img/website/icons/live-chat.png')
+              p.paragraph.paragraph--graph-desc On your website
+              p.paragraph.paragraph--graph-more
+                | using the MessageUs
+                br
+                | live chat widget
+            .graph-channels__element.graph-channels__delta
+              object(type='image/svg+xml', data='img/website/icons/third-party.svg')
+                img(src='img/website/icons/third-party.png')
+              p.paragraph.paragraph--graph-desc
+                | ON OTHER 
+                br
+                | MESSENGERS
+              p.paragraph.paragraph--graph-more
+                | like Facebook
+                br
+                | or Kik
+      .container.mobile-no-margin.visible-xs
+        .separator.mobile-no-margin
+      .separator.hidden-xs
+      .section
+        .container
+          .row
+            .col-md-8.col-md-push-2.text-block.text-block--center
+              h2.wtitle.wtitle--beta.sub-heading Everything you need in one place
+              p.paragraph
+                | MessageUs makes it easy to run your business through messaging.
+          .row--flex.promo-card
+            .col-sm-6.hidden-xs
+              div
+                img.img_responsive.img-responsive--left(src='img/website/screen01.jpg', alt='Messaging')
+            .col-xs-12.col-sm-6.text
+              .text-block--vcenter
+                .text-block.text-block--limited-sm
+                  object(type='image/svg+xml', data='img/website/icons/business-messaging.svg')
+                    img(src='img/website/icons/business-messaging.png')
+                  strong.wtitle.wtitle--delta
+                    span Customer messaging
+                  p.paragraph
+                    | Connect with your customers and stay connected with them through mobile, web, or SMS.
+                  .single-input
+                    a.mbtn.mbtn--stroke(href='customer-messaging') Learn more
+          .separator.hidden-xs
+          .row--flex.promo-card
+            .col-xs-12.col-sm-6.text
+              .text-block--vcenter
+                .text-block.text-block--limited-sm
+                  object(type='image/svg+xml', data='img/website/icons/business-payment.svg')
+                    img(src='img/website/icons/business-payment.png')
+                  strong.wtitle.wtitle--delta
+                    span Payments
+                  p.paragraph Manage every business transaction through the app – from payments to refunds.
+                  .single-input
+                    a.mbtn.mbtn--stroke(href='managing-payments') Learn more
+            .col-sm-6.hidden-xs
+              div
+                img.img_responsive.img-responsive--left(src='img/website/screen09.jpg', alt='Payments')
+          .separator.hidden-xs
+          .row--flex.promo-card
+            .col-sm-6.hidden-xs
+              div
+                img.img_responsive.img-responsive--left(src='img/website/screen06.jpg', alt='Team Messaging')
+            .col-xs-12.col-sm-6.text
+              .text-block--vcenter
+                .text-block.text-block--limited-sm
+                  object(type='image/svg+xml', data='img/website/icons/team-messaging.svg')
+                    img(src='img/website/icons/team-messaging.png')
+                  strong.wtitle.wtitle--delta
+                    span Team Messaging
+                  p.paragraph
+                    | Coordinate all of your company’s internal communication through the
+                    | app.
+                  .single-input
+                    div
+                      a.mbtn.mbtn--stroke(href='team-communication') Learn more
+      .section.cover.cover--prefooter
+        .container
+          .row
+            .col-md-8.col-md-push-2.text-block.text-block--center
+              h2.wtitle.wtitle--beta Pricing
+              p.paragraph.paragraph--beta.extra-bottom-padding
+                | Set up and claim your business. 
+                br
+                |  Pick up a plan later.
+          .row
+            .col-xs-12.col-sm-6.col-md-3
+              .pricing-card
+                .pricing-card__container
+                  .pricing-card-head.pricing-card-head--alpha
+                    strong.pricing-card-head__title Small
+                    .pricing-card-head__fee
+                      .pricing-card-head__price
+                        span.pricing-card-head__currency $
+                        .pricing-card-head__price-amount 79
+                      span.pricing-card-head__annum Monthly
+                  .pricing-card-content
+                    .pricing-card-data
+                      p.paragraph.paragraph--pricing-data
+                        | 1-5
+                      p.paragraph.paragraph--delta
+                        | Team members
+                    .pricing-card-data
+                      p.paragraph.paragraph--pricing-data
+                        | Unlimited
+                      p.paragraph.paragraph--delta
+                        | Per-consumer App Messages
+                    .pricing-card-data
+                      p.paragraph.paragraph--pricing-data
+                        | Unlimited
+                      p.paragraph.paragraph--delta
+                        | Per-live Chat Messages
+                    .pricing-card-data
+                      p.paragraph.paragraph--pricing-data
+                        | $0.01
+                      p.paragraph.paragraph--delta
+                        | Per SMS
+            .col-xs-12.col-sm-6.col-md-3
+              .pricing-card--highlight
+                .pricing-card__container
+                  .pricing-card-head.pricing-card-head--beta
+                    strong.pricing-card-head__title Medium
+                    .pricing-card-head__fee
+                      .pricing-card-head__price
+                        span.pricing-card-head__currency $
+                        .pricing-card-head__price-amount 199
+                      span.pricing-card-head__annum Monthly
+                  .pricing-card-content
+                    .pricing-card-data
+                      p.paragraph.paragraph--pricing-data
+                        | 6-15
+                      p.paragraph.paragraph--delta
+                        | Team members
+                    .pricing-card-data
+                      p.paragraph.paragraph--pricing-data
+                        | Unlimited
+                      p.paragraph.paragraph--delta
+                        | Per-consumer App Messages
+                    .pricing-card-data
+                      p.paragraph.paragraph--pricing-data
+                        | Unlimited
+                      p.paragraph.paragraph--delta
+                        | Per-live Chat Messages
+                    .pricing-card-data
+                      p.paragraph.paragraph--pricing-data
+                        | $0.01
+                      p.paragraph.paragraph--delta
+                        | Per SMS
+            .col-xs-12.col-sm-6.col-md-3
+              .pricing-card
+                .pricing-card__container
+                  .pricing-card-head.pricing-card-head--gamma
+                    strong.pricing-card-head__title Large
+                    .pricing-card-head__fee
+                      .pricing-card-head__price
+                        span.pricing-card-head__currency $
+                        .pricing-card-head__price-amount 599
+                      span.pricing-card-head__annum Monthly
+                  .pricing-card-content
+                    .pricing-card-data
+                      p.paragraph.paragraph--pricing-data
+                        | 16+
+                      p.paragraph.paragraph--delta
+                        | Team members
+                    .pricing-card-data
+                      p.paragraph.paragraph--pricing-data
+                        | Unlimited
+                      p.paragraph.paragraph--delta
+                        | Per-consumer App Messages
+                    .pricing-card-data
+                      p.paragraph.paragraph--pricing-data
+                        | Unlimited
+                      p.paragraph.paragraph--delta
+                        | Per-live Chat Messages
+                    .pricing-card-data
+                      p.paragraph.paragraph--pricing-data
+                        | $0.01
+                      p.paragraph.paragraph--delta
+                        | Per SMS
+            .col-xs-12.col-sm-6.col-md-3
+              .pricing-card
+                .pricing-card__container
+                  .pricing-card-head.pricing-card-head--delta
+                    strong.pricing-card-head__title Enterprise
+                    .pricing-card-head__fee
+                      .pricing-card-head__price
+                        .pricing-card-head__price-amount--custom CUSTOM
+                      span.pricing-card-head__annum Monthly
+                  .pricing-card-content
+                    .pricing-card-data
+                      p.paragraph.paragraph--pricing-data
+                        | Custom
+                      p.paragraph.paragraph--delta
+                        | Team members
+                    .pricing-card-data
+                      p.paragraph.paragraph--pricing-data
+                        | Unlimited
+                      p.paragraph.paragraph--delta
+                        | Per-consumer App Messages
+                    .pricing-card-data
+                      p.paragraph.paragraph--pricing-data
+                        | Unlimited
+                      p.paragraph.paragraph--delta
+                        | Per-live Chat Messages
+                    .pricing-card-data
+                      p.paragraph.paragraph--pricing-data
+                        | $0.01
+                      p.paragraph.paragraph--delta
+                        | Per SMS
+          .single-input--centered.claim-input
+            a.modal-claim-business.mbtn.inline-block(href='#claim') Claim your business
+
+  
+      include common/footer
+
+    include common/modal

@@ -1,0 +1,5 @@
+.checkbox {
+	&:checked + label {
+		display: none;
+ 	}
+}

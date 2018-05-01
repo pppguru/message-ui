@@ -1,0 +1,308 @@
+input.phoneNumber {
+  height: 64px;
+  line-height: 64px;
+  font-size: 28px;
+  font-weight: 100;
+  text-align: center;
+  margin: 20px auto 35px;
+}
+
+#claim-business {
+  max-width: 590px;
+  margin: 0 auto;
+}
+
+.claim-your-business {
+  &__title {
+    margin-bottom: 25px;
+  }
+  &__submit {
+    margin-top: 55px;
+  }
+  &__card {
+    display: flex;
+    align-items: center;
+    background-color: #F9F9F9;
+    border: 1px solid $cl-gray-d4;
+    border-radius: 4px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 50px;
+
+    &--forbidden {
+      margin: 40px auto 50px;
+    }
+  }
+  &__card-container {
+    display: block;
+    width: 100%;
+    
+    .separator {
+      margin: 25px 0;
+    }
+    .field {
+      margin-bottom: 20px;
+    }
+  }
+  &__label {
+    font-size: 14px;
+    font-weight: 700;
+    color: $cl-gray-d2;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+  &__data-text {
+    word-wrap: break-word;
+    font-size: 17px;
+    line-height: 22px;
+    color: $cl-gray-d2;
+  }
+  &__business-title {
+    font-size: 22px;
+    @include breakpoint(sm) {
+      margin-bottom: 35px;
+    }
+  }
+  &__code-check {
+    margin: 80px auto 60px;
+  }
+}
+
+.claim-steps {
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 65px;
+  
+  @include breakpoint(sm) {
+    margin-bottom: 20px;
+  }
+
+  &__single-step {
+    display: inline-block;
+    margin: 0 50px 20px;
+    max-width: 100px;
+    text-align: center;
+    vertical-align: top;
+    
+    @include breakpoint(sm) {
+      display: none;
+    }
+    
+    .claim-steps {
+      &__number {
+        display: block;
+        width: 53px;
+        height: 53px;
+        border-radius: 50%;
+        background-color: $cl-gray-d4;
+        color: white;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 53px;
+        text-align: center;
+        margin: 0 auto 12px;
+        transition: background-color 0.3s;
+      }
+      &__title {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $cl-gray-d4;
+        font-size: 14px;
+        line-height: 18px;
+        transition: color 0.3s;
+
+        @include breakpoint(sm) {
+          display: inline-block;
+        }
+      }
+    }
+
+    &-active {
+      @extend .claim-steps__single-step;
+      
+      max-width: 100%;
+      
+      @include breakpoint(sm) {
+        display: block;
+      }
+      
+      .claim-steps {
+        &__number {
+          background-color: $cl-lime;
+        }
+        &__title {
+          color: $cl-lime;
+        }
+      }
+    }
+    &-finished,
+    &-link {
+      @extend .claim-steps__single-step;
+      
+      .claim-steps {
+        &__number {
+          background-color: $cl-gray-d2;
+        }
+        &__title {
+          color: $cl-gray-d2;
+        }
+      }
+    }
+    &-link {
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        
+        .claim-steps {
+          &__number {
+            background-color: $cl-gray-d4;
+          }
+        }
+      }
+    }
+  }
+}
+
+.link-back .claim-steps__title {
+  @include breakpoint(sm) {
+    color: white !important;
+  }
+}
+
+.autosuggest-container {
+  position: relative;
+  padding: 0 !important;
+}
+.autosuggest-list {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 10;
+  max-height: 145px;
+  width: 100%;
+  overflow: auto;
+  list-style-type: none;
+  padding: 4px 0;
+  border: 1px solid $cl-gray-d4;
+  border-radius: 4px;
+  background: white;
+
+  em {
+    display: block;
+    padding: 0 10px;
+  }
+  li {
+    display: block;
+  }
+  .suggestion {
+    color: $cl-gray-d3;
+    font-size: 17px;
+    display: block;
+    line-height: 30px;
+    padding: 0 12px;
+    cursor: pointer;
+    
+    &:hover,
+    &:focus,
+    &.active {
+      background-color: $cl-focus-p;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+a.link-back {
+  position: relative;
+
+  @include breakpoint(sm) {
+    display: block;
+    text-align: center;
+    margin: 0 auto 15px;
+  }
+}
+a.link-back::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 53px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(#{$PATH}/img/website/icons/back.png);
+  background-image: linear-gradient(transparent, transparent),
+    url(#{$PATH}/img/website/icons/back.svg);
+
+  @include breakpoint(sm) {
+    display: inline-block;
+    width: 14px;
+    height: 18px;
+    margin-right: 12px;
+    vertical-align: middle;
+    position: static;
+  }
+}
+.container--modal {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: white;
+  max-width: 905px;
+  border-radius: 4px;
+}
+#modal-phone-number .container--modal {
+  max-width: 535px;
+}
+#claim,
+#modal-phone-number {
+  display: none;
+  overflow: auto;
+  padding: 15px;
+  
+  & > .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    padding: 0;
+  }
+  .claim-your-business__submit {
+    margin-top: 25px;
+  }
+}
+
+
+.modal_close {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-image: url(#{$PATH}/img/website/modal_close_black.png);
+  background-image: url(#{$PATH}/img/website/modal_close_black.svg),
+    linear-gradient(transparent, transparent);
+  transition: opacity .3s;
+  cursor: pointer;
+  
+  &:hover {
+    opacity: 0.45;
+  }
+  @media only screen and (max-width: 767px) {
+    background-image: url(#{$PATH}/img/website/modal_close.png);
+    background-image: url(#{$PATH}/img/website/modal_close.svg),
+      linear-gradient(transparent, transparent);
+  }
+}
+
+.mobile-white {
+  @include breakpoint(sm) {
+    color: white !important;
+  }
+}

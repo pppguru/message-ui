@@ -1,0 +1,28 @@
+// Define path to assets
+$PATH: "../";
+
+// Variable declarations
+$anim: 0.3s;
+
+// Color palette reference
+$cl-app-background: #F9F9F9;
+$cl-lime: #25CD83;
+$cl-aqua: #5799FF;
+$cl-red: #FF5757;
+$cl-yellow: #FFC957;
+$cl-purple: #A500E6;
+$cl-white: #FBF2FE;
+$cl-aqua-d: darken($cl-aqua, 12%);
+$cl-gray-d1: #38333B;
+$cl-gray-d2: #49444C;
+$cl-gray-d3: #605C62;
+$cl-gray-d4: #C3C1C4;
+$cl-focus-p: #A500E6;
+$cl-green: #25CD83;
+
+// Base breakpoints
+$br-xs: 34em; //544px
+$br-sm: 47.9375em; //768px
+$br-md: 62em; //992px
+$br-lg: 75em; //1200px
+$br-xl: 87.5em; //1400px

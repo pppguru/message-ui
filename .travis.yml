@@ -1,0 +1,10 @@
+language: node_js
+script:
+- npm run eslint
+cache:
+  directories:
+  - node_modules
+env:
+  global:
+  - CXX=g++-4.8
+  - NODE_ENV=unit-test

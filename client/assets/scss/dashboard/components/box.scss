@@ -1,0 +1,32 @@
+.box {
+	border: 2px solid $clr-border-dark;
+	margin-bottom: 20px;
+
+	&--default {
+		background: #fff;
+	}
+
+	&__header {
+		padding: 7px 15px;
+		border-bottom: 1px solid $clr-border-dark;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	}
+
+	&__tools {
+		display: flex;
+	}
+
+	&__title {
+		color: $clr-text-dark;
+		margin: 0;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 32px;
+	}
+
+	&__body {
+		padding: 15px;
+	}
+}

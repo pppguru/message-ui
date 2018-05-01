@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="72px" height="50px" viewBox="0 0 72 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Transacting</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="MessageUs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="01-Home" sketch:type="MSArtboardGroup" transform="translate(-359.000000, -3755.000000)">
+            <g id="Transact" sketch:type="MSLayerGroup" transform="translate(359.000000, 3755.000000)">
+                <g id="Icons/Transacting" transform="translate(1.000000, 1.000000)" sketch:type="MSShapeGroup">
+                    <path d="M54.8246739,42 L3.25867392,42 C1.48167392,42 0.0416739178,40.56 0.0416739178,38.783 L0.0416739178,3.217 C0.0416739178,1.44 1.48167392,0 3.25867392,0 L54.8246739,0 C56.6016739,0 58.0416739,1.44 58.0416739,3.217 L58.0416739,38.783 C58.0416739,40.56 56.6016739,42 54.8246739,42 L54.8246739,42 Z" id="Stroke-165" stroke="#49444C" stroke-width="2"></path>
+                    <path d="M5.04167392,8 L14.0416739,8" id="Stroke-214" stroke="#49444C" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M18.0416739,8 L27.0416739,8" id="Stroke-216" stroke="#49444C" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M5.04167392,13 L6.04167392,13" id="Stroke-218" stroke="#49444C" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M10.0416739,13 L12.0416739,13" id="Stroke-220" stroke="#49444C" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M16.0416739,13 L17.0416739,13" id="Stroke-222" stroke="#49444C" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M21.0416739,13 L23.0416739,13" id="Stroke-224" stroke="#49444C" stroke-width="2" stroke-linecap="round"></path>
+                    <path id="Stroke-226" stroke="#49444C" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M37.0416739,7 L53.0416739,7 L53.0416739,17 L37.0416739,17 L37.0416739,7 Z" id="Stroke-228" stroke="#49444C" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M5.04167392,29 L14.0416739,29 L14.0416739,35 L5.04167392,35 L5.04167392,29 Z" id="Stroke-230" stroke="#49444C" stroke-width="2"></path>
+                    <path d="M18.0416739,29 L27.0416739,29 L27.0416739,35 L18.0416739,35 L18.0416739,29 Z" id="Stroke-232" stroke="#49444C" stroke-width="2"></path>
+                    <path d="M31.0416739,29 L40.0416739,29 L40.0416739,35 L31.0416739,35 L31.0416739,29 Z" id="Stroke-234" stroke="#49444C" stroke-width="2"></path>
+                    <path d="M44.0416739,29 L53.0416739,29 L53.0416739,35 L44.0416739,35 L44.0416739,29 Z" id="Stroke-236" stroke="#A500E6" stroke-width="2"></path>
+                    <circle id="Oval-43" stroke="#A500E6" stroke-width="2" fill="#FFFFFF" cx="54" cy="32" r="16"></circle>
+                    <path d="M53,28 L38,28 L38,36 L53,36 L53,38.9991283 C53,39.5553691 53.352791,39.7307887 53.7879808,39.3986998 L62.6957116,32.6013002 C63.1348812,32.2661743 63.1309014,31.7307887 62.6957116,31.3986998 L53.7879808,24.6013002 C53.3488112,24.2661743 53,24.4481055 53,25.0008717 L53,28 Z" id="Rectangle-81" stroke="#A500E6" fill="#A500E6"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

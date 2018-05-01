@@ -1,0 +1,77 @@
+.organization {
+  &__call {
+    text-align: center;
+
+    &-status {
+      color: $clr-beta;
+
+      span {
+        position: relative;
+        text-transform: uppercase;
+
+        &:before {
+          position: absolute;
+          content: "";
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: $clr-beta;
+          top: 5px;
+          left: -15px;
+        }
+      }
+    }
+
+    button {
+      width: 100%;
+      margin-top: 5px;
+    }
+  }
+
+  &__detail {
+    margin: 20px;
+    position: relative;
+
+    dt {
+      color: $clr-text-dark;
+      margin-bottom: 5px;
+    }
+
+    dd {
+      color: #92a0ad;
+      margin-bottom: 10px;
+      margin-left: 30px;
+    }
+
+    dl {
+      margin-top: 0;
+    }
+
+    h3, label {
+      color: $clr-text-dark;
+      font-weight: 400;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    .btn {
+      margin-bottom: 10px;
+    }
+
+    .auth__input-group {
+      width: 100%;
+    }
+
+    .auth__submit--cancel {
+      margin-top: 10px;
+      color: $clr-text-dark;
+      border: 2px solid $clr-border-dark;
+
+      &:hover {
+        background: $clr-border-dark;
+      }
+    }
+  }
+}

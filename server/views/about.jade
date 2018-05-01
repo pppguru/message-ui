@@ -1,0 +1,51 @@
+extends common/layout
+
+block content
+  body.website.page__plain
+    main
+      header.header
+        .header.header--white
+          - var darkLogo = true
+          - var getTheApp = true
+          include common/header-content
+
+      .section
+        .container
+          .row
+            .col-xs-12.col-sm-4.col-md-3
+              .nav-list-wrapper
+                ul.nav-list
+                  li
+                    a.active(href='/about') About
+                    a(href='/terms-of-service') Terms of Service
+                    a(href='/privacy-policy') Privacy Policy
+            .col-xs-12.col-sm-8.col-lg-7
+              .section__text
+                .negative-margin
+                  img.img_responsive.crop-width(src='img/website/about.jpg', alt='About')
+                h1.wtitle.wtitle--beta The future of commerce is through messaging
+                p.paragraph.paragraph--beta
+                  | Today’s consumer prefers real-time messaging to telephone calls when
+                  | possible. MessageUs is a commerce platform that enables consumers and businesses to connect and transact
+                  | through real-time messaging, enabling a quicker, more engaged consumer-to-business experience.
+                p.paragraph.paragraph--beta.margin--top-25
+                  | We believe anyone should have that same connection and
+                  | intimacy with the businesses you patronize and love, that you do with your friends.
+                .connectList__container.clearfix
+                  h2.connectList__title.paragraph.paragraph--beta Connect with MessageUs
+                  ul.connectList
+                    li.connectList__item
+                      a.icon-angellist(href='https://angel.co/messageus', target='_blank') Angellist
+                    li.connectList__item
+                      a.icon-facebook(href='https://www.facebook.com/MessageUs-988115964555737', target='_blank') Facebook
+                    li.connectList__item
+                      a.icon-twitter(href='https://twitter.com/messageushq', target='_blank') Twitter
+                    li.connectList__item
+                      a.icon-linkedin(href='https://www.linkedin.com/company/realtalk-inc', target='_blank') LinkedIn
+                ul.arrowList
+                  li.arrowList__item
+                    a.link(href='mailto:press@message.us') Media Inquiries
+    
+      include common/footer
+    include common/modal
+    include common/modal-phone-number

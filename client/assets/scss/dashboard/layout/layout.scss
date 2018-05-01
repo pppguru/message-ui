@@ -1,0 +1,75 @@
+body {
+	background: #F9F9F9;
+}
+
+span:empty{
+	display:none;
+}
+
+.main {
+	display: flex;
+	min-height: calc(100vh - #{$header-height});
+}
+
+.content {
+	width: 100%;
+	position: relative;
+}
+
+.section {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: row;
+
+	&__header {
+		display: flex;
+		padding: 30px 25px 15px;
+		justify-content: space-between;
+	}
+
+	&__container {
+		flex: 1;
+		background: #ebf2f6;
+		position: relative;
+		overflow: scroll;
+	}
+
+	&__content {
+		padding: 0 25px 35px;
+		background: #ebf2f6;
+	}
+
+	&__tools {
+		display: flex;
+	}
+
+	&__title {
+		display: flex;
+		align-items: center;
+
+		h2 {
+			font-size: 23px;
+			font-weight: 400;
+			margin-left: 10px;
+			color: #7b8b99;
+		}
+
+		i {
+			color: #7b8b99;
+			font-size: 22px;
+			margin-left: 5px;
+		}
+	}
+}
+
+
+// temp override of iconfont webpack loader
+.mu{
+	&:before{
+		vertical-align:super !important;
+	}
+}

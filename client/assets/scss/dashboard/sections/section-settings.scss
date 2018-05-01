@@ -1,0 +1,75 @@
+.departments-list,
+.members-list {
+	max-height: 565px;
+	overflow: scroll;
+}
+
+.gateway-status {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	p {
+		margin: 0 0 5px 10px;
+		color: green;
+	}
+
+  &--inactive {
+		.gateway-icon {
+			border-color: #9E2424;
+			color: #9E2424;
+			font-size: 24px;
+			transform: rotate(45deg);
+		}
+
+		p {
+			color: #9E2424;
+		}
+  }
+
+  &--pending {
+    .gateway-icon {
+      border-color: $clr-alpha;
+      color: $clr-alpha;
+
+      span {
+        display: block;
+        margin-top: -11px;
+        font-size: 18px;
+      }
+    }
+
+    p {
+      color: $clr-alpha;
+    }
+  }
+}
+
+.gateway-icon {
+  border: 2px solid green;
+  border-radius: 50%;
+  height: 21px;
+  width: 21px;
+  font-size: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  margin-bottom: 1px;
+}
+
+.form--invite-employees {
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+
+  .form__group--half {
+  	width: 45%;
+  }
+
+  .text-or {
+		margin-top: 23px;
+  }
+}

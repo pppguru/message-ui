@@ -1,0 +1,171 @@
+.link {
+  color: $cl-focus-p;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  
+  &:hover,
+  &:focus {
+    color: $cl-focus-p;
+    text-decoration: underline;
+  }
+}
+
+.wtitle { //global styles for titles
+  color: $cl-gray-d2;
+  font-weight: 700;
+  
+  &--alpha { //title in landing zone (with background)
+    font-size: 54px;
+    color: white;
+    line-height: 68px;
+  }
+  &--beta { //title within sections
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  &--gamma { //footer title
+    font-size: 42px;
+    color: white;
+  }
+  &--delta { //subtitle w/ icon
+    font-size: 24px;
+    font-weight: bold;
+    color: $cl-gray-d2;
+    border-bottom: 2px solid $cl-gray-d2;
+    display: table;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+    margin: 10px 0 20px;
+  }
+  &--epsilon { //index cta card - set up title
+    @extend .wtitle--delta;
+    font-size: 30px;
+    text-transform: none;
+    border-width: 4px;
+    margin-top: 0;
+  }
+  &--nomargintop {
+    margin-top: 0;
+  }
+}
+
+.paragraph { //default paragraph styles
+  font-size: 24px;
+  color: $cl-gray-d2;
+  margin: 5px 0;
+
+  &--alpha { //paragraph in landing zone
+    color: white;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 300;
+  }
+  &--beta { //paragraph in website sections
+    font-size: 17px;
+  }
+  &--delta { //pricing data description
+    font-size: 15px;
+    line-height: 20px;
+    color: $cl-gray-d2;
+  }
+  
+  //More precise styling
+  &--pricing-title {
+    font-size: 14px;
+    line-height: 20px;
+    color: $cl-gray-d2;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  &--pricing-data {
+    color: $cl-focus-p;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  &--graph-desc {
+    color: $cl-gray-d2;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+  &--form-part-title {
+    @extend .paragraph--beta;
+    line-height: 53px;
+  }
+}
+
+.scroll-hint {
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: $cl-gray-d4;
+  transition: color $anim;
+  
+  &:hover,
+  &:focus {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.menu-footer {
+  color: white;
+  font-size: 16px;
+}
+
+.copyright {
+  font-size: 16px;
+  color: $cl-gray-d4;
+  margin-top: 9px;
+}
+
+.sub-menu {
+  color: $cl-gray-d4;
+  font-size: 15px;
+  transition: color $anim;
+
+  &--active {
+    font-weight: 500;
+    color: white;
+  }
+  &:hover,
+  &:focus {
+    color: white;
+  }
+}
+
+.text-block {
+  &--center {
+    text-align: center;
+  }
+  &--right {
+    text-align: right;
+  }
+  &--limited-md {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  &--limited-sm {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  &--vcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.extra-padded {
+  padding: 60px 0;
+}

@@ -1,0 +1,183 @@
+// Sass variables reference
+//      Variable declarations
+// $anim: 0.3s;
+//      Color palette reference
+// $cl-app-background: #F9F9F9;
+// $cl-lime: #25CD83;
+// $cl-aqua: #5799FF;
+// $cl-red: #FF5757;
+// $cl-yellow: #FFC957;
+// $cl-purple: #A500E6;
+// $cl-white: #FBF2FE;
+// $cl-aqua-d: darken($cl-aqua, 12%);
+// $cl-gray-d1: #38333B;
+// $cl-gray-d2: #49444C;
+// $cl-gray-d3: #605C62;
+// $cl-gray-d4: #C3C1C4;
+// $cl-focus-p: #A500E6;
+// $cl-green: #25CD83;
+//      Base breakpoints
+// $br-xs: 20em; //320px
+// $br-sm: 48em; //768px
+// $br-md: 62em; //992px
+// $br-lg: 75em; //1200px
+// $br-xl: 87.5em; //1400px
+//
+
+input.phoneNumber {
+  height: 64px;
+  line-height: 64px;
+  font-size: 28px;
+  font-weight: 100;
+  text-align: center;
+  margin: 20px auto 35px;
+}
+
+#claim-your-business {
+  max-width: 590px;
+  margin: 0 auto;
+}
+
+.claim-your-business {
+  &__submit {
+    margin-top: 55px;
+  }
+  &__card {
+    display: flex;
+    align-items: center;
+    min-height: 550px;
+    background-color: #F9F9F9;
+    border: 1px solid $cl-gray-d4;
+    border-radius: 4px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 30px 50px;
+  }
+  &__card-container {
+    display: block;
+    
+    .separator {
+      margin: 25px 0;
+    }
+    .field {
+      margin-bottom: 20px;
+    }
+  }
+  &__label {
+    font-size: 14px;
+    font-weight: 700;
+    color: $cl-gray-d2;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+  &__data-text {
+    font-size: 17px;
+    line-height: 22px;
+    color: $cl-gray-d2;
+  }
+  &__code-check {
+    margin: 80px auto 60px;
+  }
+}
+
+.claim-steps {
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 65px;
+  
+  &__single-step {
+    display: inline-block;
+    margin: 0 50px;
+    max-width: 100px;
+    text-align: center;
+    
+    .claim-steps {
+      &__number {
+        display: block;
+        width: 53px;
+        height: 53px;
+        border-radius: 50%;
+        background-color: $cl-gray-d4;
+        color: white;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 53px;
+        text-align: center;
+        margin: 0 auto 12px;
+        transition: background-color 0.3s;
+      }
+      &__title {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $cl-gray-d4;
+        font-size: 14px;
+        line-height: 18px;
+        transition: color 0.3s;
+      }
+    }
+
+    &-active {
+      @extend .claim-steps__single-step;
+      
+      .claim-steps {
+        &__number {
+          background-color: $cl-lime;
+        }
+        &__title {
+          color: $cl-lime;
+        }
+      }
+    }
+    &-finished {
+      @extend .claim-steps__single-step;
+      
+      .claim-steps {
+        &__number {
+          background-color: $cl-gray-d2;
+        }
+        &__title {
+          color: $cl-gray-d2;
+        }
+      }
+    }
+  }
+}
+
+.autosuggest-container {
+  position: relative;
+  padding: 0 !important;
+}
+.autosuggest-list {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 10;
+  max-height: 145px;
+  width: 100%;
+  overflow: auto;
+  list-style-type: none;
+  padding: 4px 0;
+  border: 1px solid $cl-gray-d4;
+  border-radius: 4px;
+  background: white;
+
+  li {
+    display: block;
+  }
+  a {
+    color: $cl-gray-d3;
+    font-size: 17px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+    
+    &:hover,
+    &:focus {
+      background-color: $cl-focus-p;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

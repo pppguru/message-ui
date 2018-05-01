@@ -1,0 +1,127 @@
+doctype html
+html.loading(lang='en-US')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    title MessageUs - Start Messaging Your Customers Today
+    meta(name='description', content='Use MessageUs to connect, & transact with your customers across any messaging channel')
+    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=0')
+    meta(name='author', content='MessageUs')
+    meta(property='og:title', content='MessageUs')
+    meta(property='og:description', content='Use MessageUs to connect, & transact with your customers across any messaging channel')
+    meta(property='og:image', content='http://message.us/img/og-image.png')
+    meta(name='twitter:card', content='summary')
+    meta(name='twitter:site', content='@messageUsHQ')
+    meta(name='twitter:title', content='MessageUs - Start Messaging Your Customers Today')
+    meta(name='twitter:description', content='Use MessageUs to connect, and transact with your customers across any messaging channel')
+    meta(name='twitter:image', content='http://message.us/img/twitter-image.png')
+    link(rel='apple-touch-icon', sizes='57x57', href='/favicon/apple-icon-57x57.png')
+    link(rel='apple-touch-icon', sizes='60x60', href='/favicon/apple-icon-60x60.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='/favicon/apple-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='76x76', href='/favicon/apple-icon-76x76.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='/favicon/apple-icon-114x114.png')
+    link(rel='apple-touch-icon', sizes='120x120', href='/favicon/apple-icon-120x120.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='/favicon/apple-icon-144x144.png')
+    link(rel='apple-touch-icon', sizes='152x152', href='/favicon/apple-icon-152x152.png')
+    link(rel='apple-touch-icon', sizes='180x180', href='/favicon/apple-icon-180x180.png')
+    link(rel='icon', type='image/png', sizes='192x192', href='/favicon/android-icon-192x192.png')
+    link(rel='icon', type='image/png', sizes='32x32', href='/favicon/favicon-32x32.png')
+    link(rel='icon', type='image/png', sizes='96x96', href='/favicon/favicon-96x96.png')
+    link(rel='icon', type='image/png', sizes='16x16', href='/favicon/favicon-16x16.png')
+    link(rel='manifest', href='/favicon/manifest.json')
+    meta(name='msapplication-TileColor', content='#A500E6')
+    meta(name='msapplication-TileImage', content='/favicon/ms-icon-144x144.png')
+    meta(name='theme-color', content='#A500E6')
+    link(href='/css/bootstrap.min.css', rel='stylesheet')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css')
+    link(rel='stylesheet', href='/css/intlTelInput.css')
+    link(rel='stylesheet', href='/css/main.css')
+    link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700', rel='stylesheet', type='text/css')
+    //if lt IE 9
+      script(src='//html5shiv.googlecode.com/svn/trunk/html5.js')
+      script.
+        window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\\/script>')
+
+    //reading ip-restriction from sessionstorage
+    script.
+      var ss=document.getElementsByTagName('html')[0];if(typeof(Storage)!=='undefined'){sessionStorage.getItem('ip-allowed')==='1'?ss.className='':null;window.countryCode=sessionStorage.getItem('countryCode')}
+
+    script(src='js/mixpanel.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.4.1/bluebird.min.js')
+
+  block content
+
+  #content-loading
+
+  block landing
+    #outside-of-us
+        header.cover.cover--a
+          .outside-of-us__logo.container
+            .website-brand-logo--white.website-brand-logo--non-us
+
+          div
+            .container
+              .landing
+                h1.wtitle.wtitle--alpha
+                  | Start Messaging Your
+                  br
+                  | Customers Today
+                p.paragraph.paragraph--alpha
+                  | Want MessageUs in your country?.
+                  br
+                  | Input your phone number and we’ll let you know once it’s ready.
+                .single-input.relative
+                  form.outside-of-us
+                    input.international-phone-number.international-phone-number--padded-right(type='tel', placeholder='Enter phone number')
+                    button(type="submit", disabled="true").mbtn.mbtn--branch-submit.branch-sms-form__submit Send
+                    .branch-sms-form__sent-info Sent!
+                    div.branch-message.branch-message--error
+                      p It doesn’t seem like a valid number. Please try again.
+                    div.branch-message.branch-message--success
+                      p We’ve sent you a download link to #[span.BranchNumber]
+
+  #mw
+
+  a.modal-claim-business(href="#claim",style="display:none")
+
+  script(src='/js/scripts.min.js')
+  script(src='https://maps.googleapis.com/maps/api/js?libraries=places')
+  script(src='/dist/bundle.js')
+  script(src='https://cdn.optimizely.com/js/5842774208.js')
+  script.
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-75362130-1', 'auto');
+    ga('send', 'pageview');
+  //GOSQUARED
+  script.
+    !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+    arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+    d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+    insertBefore(d,q)}(window,document,'script','_gs');
+    _gs('GSN-693236-F');
+
+  script.
+    (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setIdentity track validateCode".split(" "), 0);
+
+  if env !== 'production'
+    script(type='text/javascript').
+      branch.init('key_test_mafP456zT9nl3BR3xWcUefkgvsmKTncg');
+      var messageusWidgetConfig = {
+          organizationName: 'Message.us',
+          organizationId: '56a10b3aa2e06e7588ff4791',
+          apiUrl: 'https://messageus-test-api.herokuapp.com/api/1',
+          firebaseUrl: 'https://messageus-test.firebaseio.com'
+      };
+  else
+    script(type='text/javascript').
+      branch.init('key_live_imo2AWO2PSZLtjDzWCKZTpcewrf4SYRW');
+      var messageusWidgetConfig = {
+          organizationName: 'Message.us',
+          organizationId: '56a10b3aa2e06e7588ff4791'
+      };
+  script(src='js/widgetBundle.js')
+
+  block scripts

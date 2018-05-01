@@ -1,0 +1,64 @@
+.fade-enter {
+  opacity: 0.01;
+  position: absolute;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+  position: absolute;
+}
+
+.fade-leave {
+  opacity: 1;
+  position: absolute;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0.01;
+  transition: opacity 200ms ease-in;
+  position: absolute;
+}
+
+$time: .1s;
+$easing: ease;
+
+.page-transition-enter {
+  transition: opacity $time $easing;
+  opacity: 0;
+  position: absolute;
+}
+
+.page-transition-enter.page-transition-enter-active {
+  opacity: 1;
+}
+
+.page-transition-leave {
+  transition: opacity $time $easing;
+  opacity: 1;
+  position: absolute;
+}
+
+.page-transition-leave.page-transition-leave-active {
+  opacity: 0;
+}
+
+.cross-fade-leave {
+  opacity: 1;
+}
+.cross-fade-leave.cross-fade-leave-active {
+  opacity: 0;
+  transition: opacity .3s ease-in;
+}
+ 
+.cross-fade-enter {
+  opacity: 0;
+}
+.cross-fade-enter.cross-fade-enter-active {
+  opacity: 1;
+  transition: opacity .3s ease-in;
+}
+ 
+.cross-fade-height {
+  transition: height .15s ease-in-out;
+}

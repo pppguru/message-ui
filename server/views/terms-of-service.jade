@@ -1,0 +1,314 @@
+extends common/layout
+
+block content
+  body.website.page__plain
+    main
+      header.header.header--white
+        .header.header--white
+          - var darkLogo = true
+          - var getTheApp = true
+          include common/header-content
+
+      .section
+        .container
+          .row
+            .col-xs-12.col-sm-4.col-md-3
+              .nav-list-wrapper
+                ul.nav-list
+                  li
+                    a(href='about') About
+                    a.active(href='terms-of-service') Terms of Service
+                    a(href='privacy-policy') Privacy Policy
+            .col-xs-12.col-sm-8.col-lg-7
+              .section__text.section__tos-privacy
+                h1.wtitle.wtitle--beta.wtitle--nomargintop Terms of Service
+                p.paragraph.paragraph--beta
+                  | MessageUs Inc. (“MessageUs”/“we”/“us”/“our”) owns and operates the website located at 
+                  a.link(href='http://message.us') message.us
+                  |  (“Website”), the MessageUs Application (the “App”) and
+                  |             the Service (described below). These
+                  |             Terms of Use (the “Terms”) apply to users who use the Services provided through the Website or the App, and
+                  |             users who simply view the content on or available through the Website.
+                p.paragraph.paragraph--beta
+                  | By using this Website, the App and/or the Service you indicate your
+                  | acceptance of these Terms of Use together with our 
+                  a.link(href='privacy-policy') Privacy Policy
+                  | . If you do not accept these Terms, then do
+                  |             not use this Website, the App or the Services. These Terms may be amended or updated by us from time to time
+                  |             without notice. It is your responsibility to review these Terms for any changes. Your use after any
+                  |             amendments or updates of these Terms shall signify your acceptance of such revised Terms. Any new features
+                  |             that may be added to the Website, the App or the Service from time to time will be subject to these Terms,
+                  |             unless stated otherwise.
+                p.paragraph.paragraph--beta
+                  | If you are registering for an account on behalf of a business or another
+                  | entity you represent and warrant that (i) you are duly authorized to accept these Terms on such entity’s
+                  | behalf and to bind such entity, and (ii) such entity has full power, corporate or otherwise, to enter into
+                  | these Terms and perform its obligations hereunder.
+                ol.paragraph.paragraph--beta.margin--top-70
+                  li
+                    p
+                      strong The Service.
+                      |  The service provides a platform that allows customers and businesses
+                      |                 to interact and send messages to each other (the “Service”). In order to access the Service, you must be a
+                      |                 registered user.
+                  li
+                    p
+                      strong Claiming Your Business.
+                      |  In order to access the full suite of business tools offered
+                      |                 through the Service, you must ‘claim your business’. You can claim your business by searching for your
+                      |                 business using our search tool on the Website or the App, and providing us with the phone verification
+                      |                 code of your business.Once we have verified your request to claim your business using the phone
+                      |                 verification code, you may complete the business account registration process and invite employees who
+                      |                 will have access to the account as administrative users and will be able to manage content and
+                      |                 communicate with customers.
+                  li
+                    p
+                      strong Content.
+                      |  All information, contact lists, data, messages, photos, or other materials,
+                      |                 uploaded to and/or transmitted using the Service (“User Content”), are the sole responsibility of such
+                      |                 viewers or users. This means that the viewer or user, and not MessageUs are entirely responsible for all
+                      |                 such materials transmitted using the Service. MessageUs does not control or actively monitor User
+                      |                 Content and, as such, does not guarantee the accuracy, integrity or quality of such content. Under no
+                      |                 circumstances will MessageUs be liable in any way for any materials, including, but not limited to, for
+                      |                 any errors or omissions in any materials, or for any loss or damage of any kind incurred as a result of
+                      |                 the viewing or use of any materials emailed, transmitted or otherwise made available via the Service.
+                  li
+                    p
+                      strong Spam.
+                      |  By registering to use the Service, you represent and warrant that you will not
+                      |                 use the Service to transmit any commercial electronic messages unless you have obtained the necessary
+                      |                 consents from the recipients. It is your sole responsibility to ensure that you comply with all
+                      |                 applicable laws and regulations regarding commercial electronic messages, including without limitation
+                      |                 Canada’s Anti-Spam Legislation and the United States CAN-SPAM Act. We reserve the right to monitor your
+                      |                 account and/or investigate any complaints that you are using the Service to send commercial electronic
+                      |                 messages in violation of any applicable laws and/or regulations, and to suspend and/or terminate your
+                      |                 access to the Service if in our sole discretion we determine that you have used the Service to send
+                      |                 commercial electronic messages without complying with the applicable laws and/or regulations.
+                  li
+                    p
+                      strong Restrictions on User Content and Use of the Service.
+                      |  MessageUs reserves the right at
+                      |                 all times (but will have no obligation) to remove or refuse to distribute any User Content and to
+                      |                 terminate users. We also reserve the right to access, read, preserve, and disclose any information as we
+                      |                 reasonably believe is necessary to (i) satisfy any applicable law, regulation, legal process or
+                      |                 governmental request, (ii) enforce these Terms of Use, including investigation of potential violations
+                      |                 hereof, (iii) detect, prevent, or otherwise address fraud, security or technical issues, (iv) respond to
+                      |                 user support requests, or (v) protect the rights, property or safety of our users and the public.
+                    p.paragraph.paragraph--beta
+                      | In using the Website, the App and/or the Service you shall not:
+                    ol.paragraph.paragraph--beta(type='a')
+                      li
+                        p copy any content unless expressly permitted to do so herein;
+                      li.paragraph.paragraph--beta
+                        p upload, email, transmit or otherwise make available any material that:
+                        ol(type='i')
+                          li
+                            p
+                              | is unlawful, harmful, threatening, abusive, harassing, tortuous, defamatory, vulgar, obscene,
+                              | pornographic, libelous, invasive of another's privacy, hateful, or racially or ethnically
+                              | objectionable, encourages criminal behavior, gives rise to civil liability, violates any law, or
+                              | is otherwise objectionable;
+                          li
+                            p
+                              | you do not have a right to make available under any law or under a contractual relationship;
+                          li
+                            p
+                              | infringes any patent, trademark, trade secret, copyright or other proprietary rights of any
+                              | party (including privacy rights);
+                          li
+                            p
+                              | is or contains unsolicited or unauthorized advertising, solicitations for business, promotional
+                              | materials, "junk mail," "spam," "chain letters," "pyramid schemes," or any other form of
+                              | solicitation;
+                          li
+                            p
+                              | contains software viruses or any other computer code, files or programs designed to interrupt,
+                              | destroy or limit the functionality of any computer software or hardware or telecommunications
+                              | equipment or data or the Website or that of any users or viewers of the Website or that
+                              | compromises a user’s privacy; or
+                          li
+                            p
+                              | contains any falsehoods or misrepresentations or create an impression that you know is
+                              | incorrect, misleading, or deceptive, or any material that could damage or harm minors in any
+                              | way;
+                      li
+                        p
+                          | impersonate any person or entity or misrepresent their affiliation with a person or entity;
+                      li
+                        p
+                          | forge headers or otherwise manipulate identifiers in order to disguise the origin of any material
+                          | transmitted to or through the Website or impersonate another person or organization;
+                      li
+                        p
+                          | interfere with or disrupt the Website or servers or networks connected to the Website, or disobey
+                          | any requirements, procedures, policies or regulations of networks connected to the Website or probe,
+                          | scan, or test the vulnerability of any system or network or breach or circumvent any security or
+                          | authentication measures;
+                      li
+                        p
+                          | intentionally or unintentionally violate any applicable local, state, national or international law
+                          | or regulation;
+                      li
+                        p
+                          | collect or store personal data about other users or viewers unless permitted to do so;
+                      li
+                        p
+                          | license, sell, rent, lease, transfer, assign, distribute or host the Website, the App or the
+                          | Service; or
+                      li
+                        p
+                          | modify, translate, make derivative works of, disassemble, decompile, reverse compile or reverse
+                          | engineer any software provided as part of the Website, the App or the Service except to the extent
+                          | the foregoing restrictions are expressly prohibited by applicable law.
+                    p
+                      | You also agree not to access the Website or the App in a manner that utilizes the resources of the
+                      | Website of the App more heavily than would be the case for an individual person using a conventional web
+                      | browser. Notwithstanding the foregoing, operators of public search engines may use spiders or other bots
+                      | for the purpose of creating publicly available searchable indices of the materials on this Website or
+                      | the App.
+                  li
+                    p
+                      strong License of Content.
+                      |  By submitting User Content to the Service, you grant us (and our
+                      |                 agents) a non-exclusive, royalty-free license (with the right to sublicense) to use, copy, modify,
+                      |                 transmit, distribute and otherwise exploit such User Content as required to provide you with the
+                      |                 Service. MessageUs will not be responsible or liable for any use of User Content in accordance with
+                      |                 these Terms. You represent and warrant that you have all the rights, power and authority necessary to
+                      |                 grant the rights granted herein to any User Content that you submit.
+                  li
+                    p
+                      strong Proprietary Rights.
+                      |  Except for User Content, the Website, the App and the information
+                      |                 and materials contained therein, are the property of MessageUs and its licensors, and are protected from
+                      |                 unauthorized copying and dissemination by copyright law, trademark law, and other intellectual property
+                      |                 laws. Nothing in the Terms gives you a right to use the MessageUs names, trademarks, logos, domain
+                      |                 names, and other distinctive brand features without our prior written consent. You shall not attempt to
+                      |                 override or circumvent any of the usage rules or restrictions on the Website, the App or the Service.
+                      |                 Any future release, update, or other addition to functionality of the Website, the App or the Service
+                      |                 shall be subject to the terms of these Terms.
+                  li
+                    p
+                      strong Feedback.
+                      |  If you provide MessageUs with any suggestions, comments or other feedback
+                      |                 relating to any aspect of the Website, the App and/or Service ("Feedback"), MessageUs may use such
+                      |                 Feedback in the Website, the App, the Service or in any other MessageUs products or services
+                      |                 (collectively, "MessageUs Offerings"). Accordingly, you agree that: (a) MessageUs is not subject to any
+                      |                 confidentiality obligations in respect to the Feedback, (b) the Feedback is not confidential or
+                      |                 proprietary information of you or any third party and you have all of the necessary rights to disclose
+                      |                 the Feedback to MessageUs, (c) MessageUs (including all of its successors and assigns and any successors
+                      |                 and assigns of any of the MessageUs Offerings) may freely use, reproduce, publicize, license,
+                      |                 distribute, and otherwise commercialize Feedback in any MessageUs Offerings, and (d) you are not
+                      |                 entitled to receive any compensation or re-imbursement of any kind from MessageUs or any of the other
+                      |                 users of the Website in respect of the Feedback.
+                  li
+                    p
+                      strong DISCLAIMER OF REPRESENTATIONS, WARRANTIES AND CONDITIONS.
+                      |  THE WEBSITE, THE APP AND THE
+                      |                 SERVICE AND ALL MATERIALS PROVIDED THEREIN ARE PROVIDED "AS IS." MessageUs SPECIFICALLY DISCLAIMS ALL
+                      |                 REPRESENTATIONS, WARRANTIES AND CONDITIONS, EITHER EXPRESS, IMPLIED, STATUTORY, BY USAGE OF TRADE,
+                      |                 COURSE OF DEALING OR OTHERWISE INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES OR CONDITIONS OF
+                      |                 MERCHANTABILITY, MERCHANTABLE QUALITY, NON-INFRINGEMENT, DURABILITY, TITLE, SATISFACTORY QUALITY OR
+                      |                 FITNESS FOR A PARTICULAR PURPOSE. YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM,
+                      |                 LOSS OF DATA, OR ANY OTHER LOSS THAT RESULTS FROM USING ANY SUCH MATERIAL. MessageUs WILL NOT BE LIABLE
+                      |                 FOR ANY TYPE OF CONTENT EXCHANGED BY MEANS OF THE SERVICE. YOU ASSUME ALL RISKS AND ALL COSTS ASSOCIATED
+                      |                 WITH YOUR USE OF THE WEBSITE, THE APP AND THE SERVICE, INCLUDING, WITHOUT LIMITATION, ANY INTERNET
+                      |                 ACCESS FEES, THIRD PARTY DATA CHARGES, BACK-UP EXPENSES, COSTS INCURRED FOR THE USE OF YOUR DEVICE, AND
+                      |                 ANY DAMAGE TO ANY EQUIPMENT, SOFTWARE, INFORMATION OR DATA.
+                  li
+                    p
+                      strong LIMITATION OF LIABILITY.
+                      |  UNDER NO CIRCUMSTANCES SHALL MessageUs BE LIABLE FOR ANY
+                      |                 DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY OR OTHER DAMAGES WHATSOEVER, INCLUDING,
+                      |                 WITHOUT LIMITATION, ANY DAMAGES THAT RESULT FROM (I) YOUR USE OF OR YOUR INABILITY TO USE THIS WEBSITE,
+                      |                 THE APP OR THE SERVICE, (II) ANY INTERACTIONS OR TRANSACTIONS BETWEEN USERS; (III) THE COST OF
+                      |                 PROCUREMENT OF SUBSTITUTE GOODS, DATA, INFORMATION OR SERVICES, (IV) ERRORS, MISTAKES, OR INACCURACIES
+                      |                 IN THE MATERIALS ON THE WEBSITE, (V) PERSONAL INJURY OR PROPERTY DAMAGE OF ANY KIND WHATSOEVER ARISING
+                      |                 FROM OR RELATING TO YOUR USE OF THE SERVICE, ANY BUGS, VIRUSES, TROJAN HORSES, OR ANY OTHER FILES OR
+                      |                 DATA THAT MAY BE HARMFUL TO COMPUTER OR COMMUNICATION EQUIPMENT OR DATA THAT MAY HAVE BEEN TRANSMITTED
+                      |                 TO OR THROUGH THE WEBSITE, (VI) ANY ERRORS OR OMISSIONS IN ANY MATERIAL ON THE WEBSITE, OR (VII) ANY
+                      |                 OTHER LOSS OR DAMAGE OF ANY KIND ARISING FROM OR RELATING TO YOUR USE OF THE WEBSITE, THE APP OR THE
+                      |                 SERVICE. THESE LIMITATIONS SHALL APPLY EVEN IF MessageUs HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+                      |                 DAMAGES. NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED HEREIN, MessageUs’S LIABILITY TO YOU FOR ANY
+                      |                 DAMAGES ARISING FROM OR RELATED TO THIS AGREEMENT (FOR ANY CAUSE WHATSOEVER AND REGARDLESS OF THE FORM
+                      |                 OF THE ACTION), WILL AT ALL TIMES BE LIMITED TO FIFTY U.S. DOLLARS. THE FOREGOING LIMITATIONS SHALL
+                      |                 APPLY TO THE FULLEST EXTENT PERMITTED BY LAW IN THE APPLICABLE JURISDICTION.
+                  li
+                    p
+                      strong INDEMNIFICATION.
+                      |  YOU SHALL INDEMNIFY AND HOLD MessageUs AND ITS SUBSIDIARIES,
+                      |                 AFFILIATES, OFFICERS, AGENTS, AND EMPLOYEES, HARMLESS FROM ALL CLAIMS, ACTIONS, PROCEEDINGS, DEMANDS,
+                      |                 DAMAGES, LOSSES, COSTS, AND EXPENSES (INCLUDING REASONABLE ATTORNEYS' FEES), INCURRED IN CONNECTION WITH
+                      |                 ANY MATERIALS SUBMITTED, POSTED, TRANSMITTED OR MADE AVAILABLE BY YOU THROUGH THE SERVICE AND/OR ANY
+                      |                 VIOLATION BY YOU OF THESE TERMS OF USE AND/OR ANY APPLICABLE LAW OR REGULATION, INCLUDING WITHOUT
+                      |                 LIMITATION ANY VIOLATION OF ANY ANTI-SPAM LAWS OR REGULATIONS INCLUDING CANADA’S ANTI SPAM LEGISLATION
+                      |                 AND THE UNITED STATES CAN-SPAM ACT. EVERY RIGHT, EXEMPTION FROM LIABILITY, INDEMNITY, RELEASE, DEFENSE,
+                      |                 IMMUNITY AND WAIVER OF WHATSOEVER NATURE APPLICABLE TO A PARTY UNDER THESE TERMS SHALL ALSO BE AVAILABLE
+                      |                 AND SHALL EXTEND TO BENEFIT AND TO PROTECT SUCH PARTY’S AFFILIATES AND ITS AND THEIR OFFICERS, DIRECTORS
+                      |                 AND EMPLOYEES AND FOR SUCH PURPOSES SUCH PARTY IS OR SHALL BE DEEMED TO BE ACTING AS AGENT OR TRUSTEE ON
+                      |                 BEHALF OF AND FOR THE BENEFIT OF SUCH COMPANIES AND PERSONS FOR SUCH RIGHTS, EXEMPTIONS FROM LIABILITY,
+                      |                 INDEMNITIES, RELEASES, DEFENSES, IMMUNITIES AND WAIVERS.
+                  li
+                    p
+                      strong Termination.
+                      |  You may terminate your account at any time. MessageUs may, under certain
+                      |                 circumstances and without prior notice, immediately terminate your ability to access the Website, the
+                      |                 App or the Services or portions thereof. Cause for such termination shall include, but not be limited
+                      |                 to, (a) breaches or violations of these Terms of Use or any other agreement that you may have with
+                      |                 MessageUs (including, without limitation, non-payment of any fees owed by you to MessageUs), (b)
+                      |                 requests by law enforcement or other government agencies, (c) a request by you, (d) discontinuance or
+                      |                 material modification to the Website, the App or the Services (or any part thereof), (e) unexpected
+                      |                 technical, security or legal issues or problems, and/or (f) participation by you, directly or
+                      |                 indirectly, in fraudulent or illegal activities. Termination of your access to the Website, the App or
+                      |                 the Services may also include removal of some or all of the materials uploaded by you. You acknowledge
+                      |                 and agree that all terminations may be made by MessageUs in its sole discretion and that MessageUs shall
+                      |                 not be liable to you or any third-party for any termination of your access to this Website, the App or
+                      |                 the Services or for the removal of any of the materials uploaded by you. Any termination of these Terms
+                      |                 of Use by MessageUs shall be in addition to any and all other rights and remedies that MessageUs may
+                      |                 have.
+                  li
+                    p
+                      strong Availability &amp; Updates.
+                      |  MessageUs may alter, suspend, or discontinue this Website, the
+                      |                 App and the Service at any time and for any reason or no reason, without notice. The Website, the App
+                      |                 and/or Service may be unavailable from time to time due to maintenance or malfunction of computer or
+                      |                 network equipment or other reasons. MessageUs may periodically add or update the information and
+                      |                 materials on this Website, the App or the Service without notice.
+                  li
+                    p
+                      strong Security.
+                      |  Information sent or received over the Internet is generally unsecure and
+                      |                 MessageUs cannot and does not make any representation or warranty concerning security of any
+                      |                 communication to or from the Website or any representation or warranty regarding the interception by
+                      |                 third parties of personal or other information. You are responsible for safeguarding the password that
+                      |                 you use to access the Service and you are responsible for any activities or actions under your password.
+                      |                 You agree to keep your password secure. MessageUs will not be liable for any loss or damage arising from
+                      |                 your failure to comply with these requirements.
+                  li
+                    p
+                      strong General.
+                      |  These Terms of Use, together with our Privacy Policy constitutes the entire
+                      |                 agreement between the parties relating to the Website, the App and the Service and all related
+                      |                 activities. These Terms of Use shall not be modified except in writing signed by both parties or by a
+                      |                 new posting of these Terms of Use issued by MessageUs. If any part of these Terms of Use is held to be
+                      |                 unlawful, void, or unenforceable, that part shall be deemed severed and shall not affect the validity
+                      |                 and enforceability of the remaining provisions. The failure of MessageUs to exercise or enforce any
+                      |                 right or provision under these Terms of Use shall not constitute a waiver of such right or provision.
+                      |                 Any waiver of any right or provision by MessageUs must be in writing and shall only apply to the
+                      |                 specific instance identified in such writing. You may not assign the Terms of Use, or any rights or
+                      |                 licenses granted hereunder, whether voluntarily, by operation of law, or otherwise without MessageUs’s
+                      |                 prior written consent. MessageUs may assign these Terms of Use at any time including without limitation,
+                      |                 in connection with a change of control. The construction, validity and performance of these Terms and
+                      |                 the Privacy Policy will be governed by the laws of the Province of British Columbia and the federal laws
+                      |                 of Canada applicable therein. The Parties hereby irrevocably agree to attorn to the jurisdiction of the
+                      |                 courts of the Province of British Columbia.
+                p.paragraph.paragraph--beta.margin--top-50
+                  | If you have any questions about these Terms or if you wish
+                  | to make any complaint or claim with respect to the Service, please contact us at:
+                ul.arrowList.margin--top-15
+                  li.arrowList__item
+                    a.link(href='mailto:legal@message.us') legal@message.us
+                p.paragraph.paragraph--beta.margin--top-70 Effective Date:  May 2nd, 2016
+    
+      include common/footer
+    include common/modal
+    include common/modal-phone-number

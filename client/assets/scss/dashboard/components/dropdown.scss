@@ -1,0 +1,45 @@
+.dropdown {
+	position: relative;
+
+	&:hover {
+	 	.dropdown__list {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	&__list {
+		@include list-reset;
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		z-index: 1000;
+		box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+		background: #fff;
+		padding: 5px 0;
+	}
+
+	&__item {
+    padding: 0 0 0 15px;
+    line-height: 30px;
+
+    a {
+			color: #5b6a78;
+			font-size: 14px;
+			transition: .15s ease;
+			cursor: pointer;
+
+			&:hover {
+				color: $clr-alpha;
+			}
+    }
+
+    .mu-arrow {
+    	display: inline-block;
+    	transform: rotate(-90deg);
+    	font-size: 5px;
+    	margin-right: 5px;
+    	vertical-align: middle;
+    }
+	}
+}

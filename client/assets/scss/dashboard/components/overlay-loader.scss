@@ -1,0 +1,23 @@
+.overlay-loader {
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #f9f9f9;
+	flex-direction: column;
+	transition: .3s ease-out;
+
+	&--hidden {
+		z-index: -100;
+		opacity: 0;
+	}
+
+	img {
+		margin-bottom: 50px;
+	}
+}

@@ -1,0 +1,140 @@
+extends common/layout
+
+block content
+  body.website
+    main
+      header.cover.cover--a
+        .header.header--transcluent
+          - var menuActive = 1
+          - var getTheApp = true
+          include common/header-content
+
+        div
+          .container
+            .landing
+              h1.wtitle.wtitle--alpha
+                | Connect with any business
+                br
+                | through messaging
+              p.paragraph.paragraph--alpha
+                | MessageUs allows you to connect and transact
+                br
+                | with businesses in real time.
+              include common/tel-input--header
+              a.header-app.visible-xs(href="https://itunes.apple.com/us/app/messageus-search-message-transact/id1105398096?ls=1&mt=8")
+                img.header-app--img(src='img/website/app-store.png', width='122', height='36', alt='App store')
+        a.scroll-hint(href='#') Learn more
+
+      .section.promo-cards
+        .container
+          .row
+            .col-md-8.col-md-push-2.text-block.text-block--center
+              h1.wtitle.wtitle--beta Connecting everyone
+              p.paragraph
+                | Every business, department, product and service is available in real-time via text. Get connected to them using MessageUs.
+          .row--flex.promo-card
+            .col-sm-6.image
+              div
+                img.img_responsive.img-responsive--left(src='img/website/screen10.jpg', alt='Discovery')
+            .col-sm-6.text
+              .text-block--vcenter
+                .text-block.text-block--limited-sm
+                  object(type='image/svg+xml', data='img/website/icons/discovery.svg')
+                    img(src='img/website/icons/discovery.png')
+                  strong.wtitle.wtitle--delta
+                    span Discovery
+                  p.paragraph Learn about popular spots, services and businesses near you.
+          .separator.no-mobile
+          .row--flex.promo-card
+            .col-sm-6.text
+              .text-block--vcenter
+                .text-block.text-block--limited-sm
+                  object(type='image/svg+xml', data='img/website/icons/consumer-messaging.svg')
+                    img(src='img/website/icons/consumer-messaging.png')
+                  strong.wtitle.wtitle--delta
+                    span Messaging
+                  p.paragraph
+                    | Never wait on hold again. Just send a message to get in touch with representatives of your favorite businesses.
+            .col-sm-6.image
+              div
+                img.img_responsive.img-responsive--left(src='img/website/screen02.jpg', alt='Messaging')
+          .separator.no-mobile
+          .row--flex.promo-card
+            .col-sm-6.image
+              div
+                img.img_responsive.img-responsive--left(src='img/website/screen03.jpg', alt='Requesting')
+            .col-sm-6.text
+              .text-block--vcenter
+                .text-block.text-block--limited-sm
+                  object(type='image/svg+xml', data='img/website/icons/requesting.svg')
+                    img(src='img/website/icons/requesting.png')
+                  strong.wtitle.wtitle--delta
+                    span Requesting
+                  p.paragraph Book tables, order food, order a ride, and more; everything from within the app.
+          .separator.no-mobile
+          .row--flex.promo-card
+            .col-sm-6.text
+              .text-block--vcenter
+                .text-block.text-block--limited-sm
+                  object(type='image/svg+xml', data='img/website/icons/transacting.svg')
+                    img(src='img/website/icons/transacting.png')
+                  strong.wtitle.wtitle--delta
+                    span Transacting
+                  p.paragraph Easily pay directly in the conversation without having to switch apps. 
+            .col-sm-6.image
+              div
+                img.img_responsive.img-responsive--left(src='img/website/screen04.jpg', alt='Transacting')
+      .section.cover.cover--prefooter.mobile-no-padding-top
+        .container
+          .row
+            .col-md-8.col-md-push-2.text-block.text-block--center.extra-padded
+              p.paragraph
+                | MessageUs is everything you need to interact with your favourite businesses.
+                br
+                br
+                | Start connecting!
+              br
+              br
+              a.modal-get-app.mbtn.inline-block(href='#modal-phone-number', data-mobile-href="https://itunes.apple.com/us/app/messageus-search-message-transact/id1105398096?ls=1&mt=8") Get the app
+          .separator.mobile-no-margin-top
+          .row
+            .col-md-8.col-md-push-2.text-block.text-block--center
+              h1.wtitle.wtitle--beta Set your business up
+              p.paragraph.paragraph--beta
+                | MessageUs brings all your customer and team
+                br
+                | communication together in one place.
+          .promo-setup-cards
+            .promo-setup-cards__card
+              .promo-setup-cards__icon
+                object(type='image/svg+xml', data='img/website/icons/businesses.svg')
+                  img(src='img/website/icons/businesses.png')
+              .promo-setup-cards__text
+                span.wtitle.wtitle--epsilon For businesses
+                p.paragraph.paragraph--beta
+                  | MessageUs simplifies how you manage your team and internal communications, and helps you deliver amazing customer experiences in real time.
+              .promo-setup-cards__cta-link
+                a.link(href='for-businesses')
+                  | Learn more about 
+                  br
+                  |  MessageUs for businesses
+            .promo-setup-cards__card
+              .promo-setup-cards__icon
+                object(type='image/svg+xml', data='img/website/icons/brands.svg')
+                  img(width='55', height='55', src='img/website/icons/brands.png')
+              .promo-setup-cards__text
+                span.wtitle.wtitle--epsilon For brands
+                p.paragraph.paragraph--beta
+                  | MessageUs helps your brand coordinate communication with your consumers and the different departments from within your company.
+              .promo-setup-cards__cta-link
+                a.link(href='connect-your-brand')
+                  | Learn more about 
+                  br
+                  |  MessageUs for brands
+
+    
+      include common/footer
+
+    include common/modal
+    include common/modal-phone-number
+

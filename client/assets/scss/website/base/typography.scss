@@ -1,0 +1,241 @@
+a,
+a:hover,
+a:focus {
+    color: $cl-aqua;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.link {
+  color: $cl-focus-p;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+
+  &:hover,
+  &:focus {
+    color: $cl-focus-p;
+    text-decoration: underline;
+  }
+  @include breakpoint(xs) {
+    font-size: 14px;
+  }
+}
+
+.wtitle { //global styles for titles
+  color: $cl-gray-d2;
+  font-weight: 700;
+
+  &--alpha { //title in landing zone (with background)
+    font-size: 54px;
+    color: white;
+    line-height: 68px;
+    margin-bottom: 10px;
+
+    @include breakpoint(md) {
+      font-size: 42px;
+      line-height: 46px;
+    }
+    @include breakpoint(sm) {
+      font-size: 36px;
+      line-height: 38px;
+    }
+    @include breakpoint(xs) {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+  &--beta { //title within sections
+    font-size: 30px;
+    margin-bottom: 30px;
+
+    @include breakpoint(xs) {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  &--gamma { //footer title
+    font-size: 42px;
+    color: white;
+
+    @include breakpoint(sm) {
+      font-size: 24px;
+    }
+  }
+  &--delta { //subtitle w/ icon
+    font-size: 24px;
+    font-weight: bold;
+    color: $cl-gray-d2;
+    border-bottom: 2px solid $cl-gray-d2;
+    display: table;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+    margin: 10px 0 20px;
+
+    @include breakpoint(sm) {
+      margin: 10px auto;
+      font-size: 16px;
+    }
+  }
+  &--epsilon { //index cta card - set up title
+    @extend .wtitle--delta;
+    font-size: 30px;
+    text-transform: none;
+    border-width: 4px;
+    margin-top: 0;
+
+    @include breakpoint(xs) {
+      font-size: 20px;
+      border-width: 2px;
+    }
+  }
+  &--nomargintop {
+    margin-top: 0;
+  }
+}
+
+.paragraph { //default paragraph styles
+  font-size: 24px;
+  color: $cl-gray-d2;
+  margin: 5px 0;
+
+  @include breakpoint(sm) {
+    font-size: 18px;
+  }
+  @include breakpoint(xs) {
+    font-size: 14px;
+  }
+  &--alpha { //paragraph in landing zone
+    color: #F9F9F9;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 300;
+
+    @include breakpoint(xs) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  &--beta { //paragraph in website sections
+    font-size: 17px;
+
+    @include breakpoint(xs) {
+      font-size: 14px;
+    }
+  }
+  &--delta { //pricing data description
+    font-size: 15px;
+    line-height: 20px;
+    color: $cl-gray-d2;
+  }
+  
+  &--button-sep { // or text between buttons
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  //More precise styling
+  &--pricing-title {
+    font-size: 14px;
+    line-height: 20px;
+    color: $cl-gray-d2;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  &--pricing-data {
+    color: $cl-focus-p;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  &--graph-desc {
+    color: $cl-gray-d2;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+  &--graph-more {
+    font-size: 20px;
+    color: $cl-gray-d2;
+    line-height: 26px;
+  }
+  &--form-part-title {
+    @extend .paragraph--beta;
+    line-height: 53px;
+    
+    @include breakpoint(md) {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+  &--small-hint {
+    font-size: 13px;
+    color: $cl-gray-d3;
+  }
+}
+
+.scroll-hint {
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: $cl-gray-d4;
+  transition: color $anim;
+
+  &:hover,
+  &:focus {
+    color: white;
+    text-decoration: none;
+  }
+  @include breakpoint(xs) {
+    font-size: 10px;
+  }
+}
+
+.menu-footer {
+  color: white;
+  font-size: 16px;
+}
+
+.copyright {
+  font-size: 16px;
+  color: $cl-gray-d4;
+  margin-top: 9px;
+}
+
+
+.sub-menu {
+  color: $cl-gray-d4;
+  font-size: 15px;
+  transition: color $anim;
+
+  &--active {
+    font-weight: 500;
+    color: white;
+  }
+  &:hover,
+  &:focus {
+    color: white;
+  }
+}
+
+.mbtn {
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  text-transform: uppercase;
+
+  @include breakpoint(xs) {
+    font-size: 14px;
+  }
+}

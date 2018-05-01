@@ -1,0 +1,38 @@
+extends common/layout
+
+block content
+  body.website
+    main
+      header.cover.cover--f
+        .header.header--transcluent
+          - var menuActive = 3
+          - var getTheApp = true
+          include common/header-content
+
+        div
+          .container
+            .landing
+              h1.wtitle.wtitle--alpha Connect your brand
+              p.paragraph.paragraph--alpha
+                | Enable customers to connect with your
+                br
+                | brand through MessageUs
+              .single-input
+                a.mbtn(href='#scroll-down') Request demo 
+        a.scroll-hint(href='#') Learn more
+        
+      .section
+        .container
+          .row
+            .col-md-8.col-md-push-2.text-block.text-block--center
+              h1.wtitle.wtitle--beta Are you a national chain or brand?
+              p.paragraph.paragraph--beta
+                | Fill out the form below with your contact information and we’ll get in touch soon.
+          .separator
+          #connect-brand
+
+    
+      include common/footer
+
+    include common/modal
+    include common/modal-phone-number

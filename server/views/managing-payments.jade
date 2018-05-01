@@ -1,0 +1,141 @@
+extends common/layout
+
+block content
+  body.website
+    main
+      header.cover.cover--d
+        .header.header--transcluent
+          - var menuActive = 2
+          - var subMenuActive = 2
+          include common/header-content
+
+        div
+          .container
+            .landing
+              h1.wtitle.wtitle--alpha
+                | Managing
+                br
+                | Payments
+              p.paragraph.paragraph--alpha
+                | MessageUs brings all your customer and team
+                br
+                | communication together in one place
+              .single-input
+                a.modal-claim-business.mbtn(href='#claim') Claim your business
+        a.scroll-hint(href='#') Learn more
+      .section
+        .container
+          .text-block--footer.text-block--center
+            .wtitle.wtitle--beta Use your existing merchant account
+          .row--flex.logo-list
+            .logo-list--image
+              img(src='img/website/logos/first-data.jpg', alt='First Data')
+            .logo-list--image
+              img(src='img/website/logos/chase.jpg', alt='Chase paymentech')
+            .logo-list--image
+              img(src='img/website/logos/vantiv.jpg', alt='Vantiv')
+            .logo-list--image
+              img(src='img/website/logos/global-payments.jpg', alt='Global Payments')
+            .logo-list--image
+              img(src='img/website/logos/moneris.jpg', alt='Moneris solution')
+            .logo-list--image
+              img(src='img/website/logos/elavon.jpg', alt='Elavon')
+          .text-block--footer.text-block--center
+            .wtitle.wtitle--beta 100 + payment gateways supported globally
+          .row--flex.logo-list
+            .logo-list--image
+              img(src='img/website/logos/stripe.jpg', alt='Stripe')
+            .logo-list--image
+              img(src='img/website/logos/paypal.jpg', alt='PayPal')
+            .logo-list--image
+              img(src='img/website/logos/amazon.jpg', alt='Amazon Payments')
+            .logo-list--image
+              img(src='img/website/logos/braintree.jpg', alt='Braintree')
+            .logo-list--image
+              img(src='img/website/logos/pin-payments.jpg', alt='Pin Payments')
+            .logo-list--image
+              img(src='img/website/logos/sage-pay.jpg', alt='Sage Pay')
+            .logo-list--image
+              img(src='img/website/logos/authorize.net.jpg', alt='Authorize.net')
+          .separator.mobile-no-margin
+      .section.push-bottom
+        .container
+          .row--flex
+            .col-sm-6.hidden-xs.bottom
+              img.img_responsive.img-bottom(src='img/website/screen-transact.jpg', alt='Transacting')
+            .col-xs-12.col-sm-6
+              .text-block--vcenter
+                .text-block.text-block--limited-sm
+                  h3.wtitle.wtitle--beta.extra-left-padding.mobile-no-margin-top
+                    | Fast and easy in-chat
+                    | transactions
+                  p.paragraph.paragraph--beta
+                    | Users never have to leave the app to make a payment or place an order so you never lose a sale.
+                  .single-input.mobile-extra-padding-bottom
+                    a.mbtn.mbtn--stroke.button-full-w(href='customer-messaging') ABOUT MESSAGING CONSUMERS
+      .section.cover
+        .container
+          .row--flex.row-sm-no-flex
+            .col-xs-12.col-sm-6.text
+              .text-block--vcenter
+                .text-block.text-block--limited-sm
+                  h3.wtitle.wtitle--beta.extra-left-padding.mobile-no-margin-top Delight your consumers
+                  p.paragraph.paragraph--beta
+                    | MessageUs keeps track of your consumers’ purchase and ordering history so you can easily track their habits to deliver an amazing customer experience every time.
+            .col-xs-12.col-sm-6
+              .center-sm
+                .negative-margin-30
+                  img.img_responsive.img-responsive--left.crop-width.give-support-img(src='img/website/order-history.jpg', alt='Order history')
+      .separator.mobile-no-margin.visible-xs
+      .section
+        .container
+          .row
+            .col-md-8.col-md-push-2.text-block.text-block--center
+              h1.wtitle.wtitle--beta Payments are easy to access
+              p.paragraph
+                | Since payments are built into the messaging, consumers can make transactions through their favorite channel to communicate with your business.
+          .graph-channels--inline
+            .graph-channels__element.graph-channels__alpha
+              object(type='image/svg+xml', data='img/icons/consumerapp.svg')
+                img(src='img/website/icons/consumerapp.png')
+              p.paragraph.paragraph--graph-desc
+                | MESSAGEUS
+                br
+                | CONSUMER APP
+            .graph-channels__element.graph-channels__beta
+              object(type='image/svg+xml', data='img/icons/business-sms.svg')
+                img(src='img/website/icons/business-sms.png')
+              p.paragraph.paragraph--graph-desc
+                | Business SMS
+                br
+                | NUMBER
+            .graph-channels__guideline
+            .graph-channels__element.graph-channels__gamma
+              object(type='image/svg+xml', data='img/icons/live-chat.svg')
+                img(src='img/website/icons/live-chat.png')
+              p.paragraph.paragraph--graph-desc
+                | LIVE CHAT WIDGET
+                br
+                | ON BUSINESSES’ WEBSITE
+            .graph-channels__element.graph-channels__delta
+              object(type='image/svg+xml', data='img/icons/third-party.svg')
+                img(src='img/website/icons/third-party.png')
+              p.paragraph.paragraph--graph-desc
+                | THIRD-PARTY
+                br
+                | CHANNELS
+      .cover.cover--prefooter
+        .container
+          .row
+            .col-md-8.col-md-push-2.text-block.text-block--center.extra-padded
+              p.paragraph.extra-center-padding.extra-bottom-padding
+                | Everything you need to interact with your favourite businesses.
+                br
+                | Start connecting!
+              .single-input--centered.claim-input
+                a.modal-claim-business.mbtn.inline-block(href='#claim') Claim your business
+
+  
+      include common/footer
+
+    include common/modal

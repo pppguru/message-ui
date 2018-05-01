@@ -1,0 +1,23 @@
+.channel__header {
+  font-size: 13px;
+}
+.channel__header-list {
+  padding-left: 25px;
+}
+
+.channel__header-item {
+  list-style: none;
+  display: inline-block;
+  color: $clr-text-dark;
+
+  &:after {
+    content: ', ';
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  &:last-child:after {
+    content: '';
+    display: inline-block;
+  }
+}

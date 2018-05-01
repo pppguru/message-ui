@@ -1,0 +1,98 @@
+extends common/layout
+
+block content
+  body.website
+    main
+      header.cover.cover--e
+        .header.header--transcluent
+          - var menuActive = 2
+          - var subMenuActive = 3
+          include common/header-content
+
+        .container
+          .landing
+            h1.wtitle.wtitle--alpha
+              | Team
+              br
+              | Communication
+            p.paragraph.paragraph--alpha
+              | MessageUs brings all your customer and team
+              br
+              | communication together in one place
+            .single-input
+              a.modal-claim-business.mbtn(href='#claim') Claim your business
+        a.scroll-hint(href='#') Learn more
+      .section.push-bottom
+        .container
+          .row--flex
+            .col-sm-6.hidden-xs.bottom
+              div
+                img.img_responsive.img-bottom(src='img/website/screen05.jpg', alt='Invitations')
+            .col-xs-12.col-sm-6.text
+              .text-block--vcenter
+                .text-block.text-block--limited-sm
+                  h3.wtitle.wtitle--beta.mobile-no-margin-top
+                    | Everything your team needs to communicate and deliver an amazing customer experience
+                  p.paragraph.paragraph--beta
+                    | MessageUs allows you to create different channels based on your company structure so your teams can stay organized.
+                  .single-input.visible-xs.mobile-extra-padding-bottom
+                    a.mbtn.mbtn--stroke(href='customer-messaging') ABOUT MESSAGING CONSUMERS
+      .section.cover
+        .container
+          .row--flex.row-sm-no-flex
+            .col-xs-12.col-sm-6.text
+              .text-block--vcenter
+                .text-block.text-block--limited-sm
+                  h3.wtitle.wtitle--beta.extra-left-padding.mobile-no-margin-top
+                    | Coordinate tasks with the right team members
+                  p.paragraph.paragraph--beta
+                    | Easily assign available team members to requests sent by your customers to ensure a fast response.
+                  .single-input.hidden-xs
+                    a.mbtn.mbtn--stroke(href='customer-messaging') About messaging consumers
+            .col-xs-12.col-sm-6
+              .center-sm.mobile-extra-padding-top
+                img.img_responsive.img-responsive--left(src='img/website/team-coordination.png', alt='Team coordination')
+            .col-sm-12.single-input--centered.visible-xs
+              a.mbtn.mbtn--stroke(href='customer-messaging') About messaging consumers
+      .separator.mobile-no-margin.visible-xs
+      .section.push-bottom
+        .container
+          .row--flex.promo-card.mobile-no-margin-top
+            .col-sm-6.hidden-xs
+              div
+                img.img_responsive.img-responsive--left(src='img/website/screen06.jpg', alt='Team communication')
+            .col-xs-12.col-sm-6.text
+              .text-block--vcenter
+                .text-block.text-block--limited-sm
+                  h3.wtitle.wtitle--beta.mobile-no-margin-top
+                    | Real-time communication with your team
+                  p.paragraph.paragraph--beta
+                    | MessageUs Team Chat makes it simple to for your team stay connected and serve your customers.
+          .separator
+          .row--flex.row-sm-no-flex.promo-card
+            .col-xs-12.col-sm-6.text
+              .text-block--vcenter
+                .text-block.text-block--limited-sm
+                  h3.wtitle.wtitle--beta.mobile-no-margin-top
+                    | Everything in its right place
+                  p.paragraph.paragraph--beta
+                    | In addition to different messaging channels or departments, your team members can create private channels and send direct messages with other team members.
+            .col-xs-12.col-sm-6
+              .center-sm.mobile-extra-padding-top
+                img.img_responsive.img-responsive--left(src='img/website/menu-preview.jpg', alt='Everything in its place')
+      .cover.cover--prefooter
+        .container
+          .row
+            .col-md-8.col-md-push-2.text-block.text-block--center.extra-padded
+              p.paragraph.extra-center-padding.extra-bottom-padding
+                | Everything you need to interact with your favourite businesses.
+                br
+                | Start connecting!
+              .single-input--centered.single-input--vcenter
+                a.modal-claim-business.mbtn.extra-padded--center(href='#claim') Claim your business
+                a.mbtn.extra-padded--center(href='connect-your-brand') Request Demo
+
+  
+      include common/footer
+
+    include common/modal

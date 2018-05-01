@@ -1,0 +1,49 @@
+.section--activity {
+	.customer-requests-list tbody {
+		min-height: 500px;
+		background: #fff;
+	}
+}
+
+.form--edit-customer {
+	.form {
+		&__content {
+			max-width: 750px;
+		}
+
+		&__title {
+			margin-bottom: 50px;
+		}
+
+		&__group {
+			max-width: 280px;
+		}
+
+		&__column {
+			&--left {
+				border-right: 1px solid $clr-border-dark;
+				padding-right: 40px;
+				margin-right: 40px;
+			}
+		}
+	}
+}
+
+.input--user-image {
+	margin-top: 7px;
+
+	.dropzone {
+		margin-top: 23px;
+	}
+
+	.dropzone__image {
+		margin: 0 auto;
+		position: relative;
+		cursor: pointer;
+
+		&:before,
+		img {
+			border-radius: 50%;
+		}
+	}
+}

@@ -1,0 +1,20 @@
+.status-indicator {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #647687;
+	display: inline-block;
+	margin-right: 10px;
+
+	&--web {
+		background: $clr-beta;
+	}
+
+	&--ios {
+		background: yellow;
+	}
+
+	&--android {
+		background: yellow;
+	}
+}

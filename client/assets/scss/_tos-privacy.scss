@@ -1,0 +1,35 @@
+.section__tos-privacy {
+    & > ol,
+    & > ul {
+        padding-left: 25px;
+
+        @media screen and (min-width: $br-sm) {
+            padding-left: 40px;
+        }
+
+        @media screen and (min-width: $br-md) {
+            padding-left: 60px;
+        }
+
+        @media screen and (min-width: $br-lg) {
+            padding-left: 85px;
+        }
+
+        li + li {
+            margin-top: 20px;
+
+            @media screen and (min-width: $br-sm) {
+                margin-top: 35px;
+            }
+        }
+    }
+
+    & > ul {
+        color: $cl-focus-p;
+
+        h2,
+        p {
+            color: $cl-gray-d2;
+        }
+    }
+}

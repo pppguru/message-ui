@@ -1,0 +1,35 @@
+.container
+  a(href='/', title='Home', class=darkLogo ? "website-brand-logo" : "website-brand-logo--white")
+  nav(role='navigation')
+    .mobile-description.paragraph--alpha
+      p Start Messaging Your Customers Today.
+    ul.main-navigation
+      li
+        a(href='/', class=menuActive==1 ? "active" : undefined) For consumers
+      li
+        a(href='for-businesses', class=menuActive==2 ? "active" : undefined) For businesses
+        .sub-menu__nav
+          .container
+            ul
+              li
+                a(href='customer-messaging', class=subMenuActive==1 ? "active" : undefined) Customer Messaging
+              li
+                a(href='managing-payments', class=subMenuActive==2 ? "active" : undefined) Payments
+              li
+                a(href='team-communication', class=subMenuActive==3 ? "active" : undefined) Team Messaging
+              li.side-anchor
+                a(href='app')
+                  span.hidden-xs ›&nbsp;
+                  | Sign in for Businesses
+      li
+        a(href='connect-your-brand', class=menuActive==3 ? "active" : undefined) For brands
+    .nav-app.visible-xs
+      a(href="https://itunes.apple.com/us/app/messageus-search-message-transact/id1105398096?ls=1&mt=8")
+        img.nav-app--img(src='img/website/app-store.png', width='122', height='36', alt='App store')
+  if getTheApp
+    a.modal-get-app.mbtn(href='#modal-phone-number', data-mobile-href="https://itunes.apple.com/us/app/messageus-search-message-transact/id1105398096?ls=1&mt=8") Get The App
+  else
+    a.modal-claim-business.mbtn(href='#claim') Claim your business
+
+  button.toggle-nav
+    span.icon-bars

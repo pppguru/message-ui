@@ -1,0 +1,21 @@
+extends common/layout
+
+block content
+  body.website
+    div
+      header.cover.cover--404
+        .header.header--transcluent
+          include common/header-content
+
+        .container
+          .not-found-wrapper
+            h1.wtitle.wtitle--alpha
+              | Sorry, we cannot find that page
+            p.paragraph.paragraph--alpha
+              | That page seems to be lost somewhere.
+            p.paragraph.paragraph--alpha
+              a.link--white(href="/") Try this one instead
+              | .
+    include common/modal
+
+block landing

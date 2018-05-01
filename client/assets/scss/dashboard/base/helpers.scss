@@ -1,0 +1,39 @@
+.text {
+	&--left {
+		text-align: left !important;
+	}
+
+	&--center {
+		text-align: center !important;
+	}
+
+	&--right {
+		text-align: right !important;
+	}
+
+	&--danger {
+		color: $clr-danger;
+	}
+}
+
+.mr {
+	&--5 {
+		margin-right: 5px;
+	}
+}
+
+.mb {
+	&--20 {
+		margin-bottom: 20px;
+	}
+}
+
+.mt {
+	&--10 {
+		margin-top: 10px;
+	}
+}
+
+.no-wrap {
+	white-space: nowrap;
+}

@@ -1,0 +1,141 @@
+.ReactModalPortal {
+	div {
+		// transition: .15s ease-out;
+	}
+}
+
+.ReactModal {
+	&__Overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(255,255,255,.98);
+		z-index: 9999;
+		// transition: .1s ease;
+	}
+
+	&__Content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // transition: .1s ease;
+
+    > span {
+    	height: 100%;
+    	display: block;
+    }
+	}
+}
+
+.modal {
+	&__header {
+		background: #eff3f5;
+		border-bottom: 1px solid $clr-border-dark;
+		display: flex;
+		padding: 10px 15px;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__title {
+		margin: 4px 0;
+		font-weight: 400;
+		color: $clr-text-dark;
+
+		i {
+			margin-right: 5px;
+		}
+	}
+
+	&__close {
+		background: none;
+		border: none;
+		margin: 0;
+		padding: 0;
+		outline: none;
+		height: 22px;
+		font-size: 42px;
+		line-height: 1px;
+		color: #929fab;
+		font-weight: 300;
+	}
+
+	&__message {
+		padding: 10px 15px;
+		overflow: hidden;
+		display: flex;
+		border-bottom: 1px solid $clr-border-dark;
+
+		input {
+			border: 0;
+			outline: none;
+			width: 100%;
+		}
+	}
+
+	&__footer {
+		background: #eff3f5;
+		border-bottom: 1px solid $clr-border-dark;
+		display: flex;
+		padding: 10px 15px;
+		justify-content: flex-end;
+
+		&--center {
+			justify-content: center;
+		}
+	}
+
+	&__body {
+		max-height: 400px;
+		overflow: scroll;
+	}
+
+	&__list {
+		@include list-reset;		
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		border-bottom: 1px solid $clr-border-dark;;
+		padding: 10px 15px;
+	}
+
+	&__image {
+		width: 40px;
+		height: 40px;
+		margin-right: 10px;
+	}
+
+	&__placeholder-image {
+		width: 40px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #EFF3F5;
+		border: 1px solid #D2DCE4;
+		color: #5B6A78;
+	}
+
+	&__name {
+		flex: 1;
+		color: $clr-text-dark;
+	}
+
+	&__count {
+		color: $clr-text-dark;
+
+		input {
+	    border: 1px solid $clr-border-dark;
+	    border-radius: 30px;
+	    padding: 5px 10px 5px 20px;
+	    width: 83px;
+	    outline: none;
+		}
+	}
+}
